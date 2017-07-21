@@ -1,0 +1,83 @@
+/* ----- 2 Key Players ----- */
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+/* set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#play .logo {
+  width: 50%;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+}
+
+#sidebar .avatar {
+  width: 100%;
+  padding: 16px 16px 12px 16px !important;
+}
+#sidebar .avatar svg {
+  width: 100%;
+}
+#sidebar .avatar svg path {
+  fill: #222222;
+}
+#sidebar .avatar svg:hover path {
+  fill: #ffffff;
+}
+
+#navbar {
+  border-bottom: 1px solid #222222;
+}
+#navbar .w3-bar-item {
+  width: 20% !important;
+  padding: 5px 16px 4px 16px !important;
+}
+
+.keyplayer {
+}
+.keyplayer.no1 {
+  padding-right: 32px;
+}
+.keyplayer.no2 {
+  padding-left: 32px;
+}
+.keyplayer .value {
+  padding: 2px 16px;
+}
+.keyplayer img {
+  width: 40%;
+  max-width: 256px;
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.keyplayer img:hover {
+  -moz-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.keyplayer a {
+  overflow: hidden;
+}
+.keyplayer > a:hover {
+  text-decoration: none;
+}
+
+footer .copy {
+  text-align: left;
+}
+footer .power {
+  text-align: right;
+}
