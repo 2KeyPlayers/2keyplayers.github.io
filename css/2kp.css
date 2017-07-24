@@ -2,7 +2,7 @@
 
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
+.w3-sidebar, {width: 120px}
 /* add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* remove margins from "page content" on small screens */
@@ -15,75 +15,101 @@ a:hover {
   text-decoration: underline;
 }
 
+.pink {
+  background-color: #ff64b2 !important;
+}
 .red {
-  background-color: #ff6464;
+  background-color: #ff6464 !important;
 }
 .yellow {
-  background-color: #efde22;
+  background-color: #efde22 !important;
 }
 .green {
-  background-color: #70d570;
+  background-color: #70d570 !important;
 }
 .orange {
-  background-color: #f99c24;
+  background-color: #f99c24 !important;
 }
 .blue {
-  background-color: #6ec9d4;
+  background-color: #6ec9d4 !important;
+}
+.hover-pink:hover {
+  background-color: #ff64b2 !important;
 }
 .hover-red:hover {
-  background-color: #ff6464;
+  background-color: #ff6464 !important;
 }
 .hover-yellow:hover {
-  background-color: #efde22;
+  background-color: #efde22 !important;
 }
 .hover-green:hover {
-  background-color: #70d570;
+  background-color: #70d570 !important;
 }
 .hover-orange:hover {
-  background-color: #f99c24;
+  background-color: #f99c24 !important;
 }
 .hover-blue:hover {
-  background-color: #6ec9d4;
+  background-color: #6ec9d4 !important;
+}
+.text-pink {
+  color: #ff64b2 !important;
 }
 .text-red {
-  color: #ff6464;
+  color: #ff6464 !important;
 }
 .text-yellow {
-  color: #efde22;
+  color: #efde22 !important;
 }
 .text-green {
-  color: #70d570;
+  color: #70d570 !important;
 }
 .text-orange {
-  color: #f99c24;
+  color: #f99c24 !important;
 }
 .text-blue {
-  color: #6ec9d4;
+  color: #6ec9d4 !important;
+}
+.hover-text-pink:hover {
+  color: #ff64b2 !important;
+  background-color: inherit !important;
 }
 .hover-text-red:hover {
-  color: #ff6464;
+  color: #ff6464 !important;
+  background-color: inherit !important;
 }
 .hover-text-yellow:hover {
-  color: #efde22;
+  color: #efde22 !important;
+  background-color: inherit !important;
 }
 .hover-text-green:hover {
-  color: #70d570;
+  color: #70d570 !important;
+  background-color: inherit !important;
 }
 .hover-text-orange:hover {
-  color: #f99c24;
+  color: #f99c24 !important;
+  background-color: inherit !important;
 }
 .hover-text-blue:hover {
-  color: #6ec9d4;
+  color: #6ec9d4 !important;
+  background-color: inherit !important;
 }
 
 hr {
   width: 200px;
 }
 
+.link-icon {
+  font-size: 80%;
+  padding-right: 3px;
+}
+
 #play .logo {
   width: 50%;
 }
 
+.navbar {
+  background: #222222;
+}
 .navbar a:hover {
   text-decoration: none;
 }
@@ -102,12 +128,19 @@ hr {
   fill: #ffffff;
 }
 
-#navbar {
-  border-bottom: 1px solid #222222;
+#navbar a {
+  border-bottom: 1px solid #8f8f8f;
+}
+#navbar a.active {
+  border-bottom: 1px solid #000000;
 }
 #navbar .w3-bar-item {
   width: 20% !important;
   padding: 5px 16px 4px 16px !important;
+}
+
+#sidebar a.active, #navbar a.active {
+  background-color: #000000 !important;
 }
 
 .keyplayer {
@@ -165,7 +198,7 @@ footer hr {
   color: #3a475c !important;
 }
 .github:hover i {
-  color: #0e2635 !important;
+  color: #6ec9d4 !important;
 }
 .steam:hover i {
   color: #c6d4df !important;
