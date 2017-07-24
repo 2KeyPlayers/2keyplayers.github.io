@@ -15,6 +15,71 @@ a:hover {
   text-decoration: underline;
 }
 
+.red {
+  background-color: #ff6464;
+}
+.yellow {
+  background-color: #efde22;
+}
+.green {
+  background-color: #70d570;
+}
+.orange {
+  background-color: #f99c24;
+}
+.blue {
+  background-color: #6ec9d4;
+}
+.hover-red:hover {
+  background-color: #ff6464;
+}
+.hover-yellow:hover {
+  background-color: #efde22;
+}
+.hover-green:hover {
+  background-color: #70d570;
+}
+.hover-orange:hover {
+  background-color: #f99c24;
+}
+.hover-blue:hover {
+  background-color: #6ec9d4;
+}
+.text-red {
+  color: #ff6464;
+}
+.text-yellow {
+  color: #efde22;
+}
+.text-green {
+  color: #70d570;
+}
+.text-orange {
+  color: #f99c24;
+}
+.text-blue {
+  color: #6ec9d4;
+}
+.hover-text-red:hover {
+  color: #ff6464;
+}
+.hover-text-yellow:hover {
+  color: #efde22;
+}
+.hover-text-green:hover {
+  color: #70d570;
+}
+.hover-text-orange:hover {
+  color: #f99c24;
+}
+.hover-text-blue:hover {
+  color: #6ec9d4;
+}
+
+hr {
+  width: 200px;
+}
+
 #play .logo {
   width: 50%;
 }
@@ -63,11 +128,11 @@ a:hover {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-.keyplayer img:hover {
+/*.keyplayer img:hover {
   -moz-transform: scale(1.08);
   -webkit-transform: scale(1.08);
   transform: scale(1.08);
-}
+}*/
 .keyplayer a {
   overflow: hidden;
 }
@@ -75,9 +140,42 @@ a:hover {
   text-decoration: none;
 }
 
-footer .copy {
-  text-align: left;
+#contact a:hover {
+  text-decoration: none;
 }
-footer .power {
-  text-align: right;
+
+footer hr {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.location:hover i {
+  color: #ff6464 !important;
+}
+.mail:hover i {
+  color: #6ec9d4 !important;
+}
+.twitter:hover i {
+  color: #1da1f2 !important;
+}
+.facebook:hover i {
+  color: #3b5998 !important;
+}
+.tumblr:hover i {
+  color: #3a475c !important;
+}
+.github:hover i {
+  color: #0e2635 !important;
+}
+.steam:hover i {
+  color: #c6d4df !important;
+}
+
+@media (max-width:768px) {
+  .keyplayer.no1 {
+    padding-right: 12px;
+  }
+  .keyplayer.no2 {
+    padding-left: 12px;
+  }
 }
