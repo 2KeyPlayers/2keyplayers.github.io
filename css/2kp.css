@@ -141,6 +141,9 @@ header hr {
 #play h4 {
   margin-top: 0;
 }
+#play br {
+  display: none;
+}
 
 .navbar {
   background: #222222;
@@ -248,8 +251,21 @@ footer .link-icon {
 }
 
 @media (max-width:768px) {
+  h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}
+
+  hr {
+    width: 160px;
+  }
+
   header > div {
-    width: 80%;
+    width: 100%;
+  }
+
+  #play img {
+    width: 60%;
+  }
+  #play br {
+    display: inline;;
   }
 
   .keyplayer.no1 {
@@ -263,6 +279,10 @@ footer .link-icon {
 @media (max-width:600px) {
   header > div {
     width: 100%;
+  }
+
+  #play img {
+    width: 80%;
   }
 
   .keyplayer.no1 {

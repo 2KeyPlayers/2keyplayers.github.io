@@ -40,36 +40,40 @@ $(function() {
   }
 });
 
+function adaptBars() {
+  var playPosition = $("#play").offset().top;
+  var aboutPosition = $("#about").offset().top;
+  var stuffPosition = $("#stuff").offset().top;
+  var contactPosition = $("#contact").offset().top;
+  var scrollTop = $(window).scrollTop();
+  var offset = 10;
+
+  $(".logo").removeClass("inactive");
+  $(".sidebar-item").removeClass("active");
+  $(".navbar-item").removeClass("text-pink text-red text-green text-blue");
+
+  if (scrollTop > contactPosition + offset) {
+    $(".sidebar-contact").addClass("active");
+    $(".navbar-contact").addClass("text-blue");
+  } else if (scrollTop > stuffPosition + offset) {
+    $(".sidebar-stuff").addClass("active");
+    $(".navbar-stuff").addClass("text-green");
+  } else if (scrollTop > aboutPosition - 74 + offset) {
+    $(".sidebar-about").addClass("active");
+    $(".navbar-about").addClass("text-red");
+  } else {
+    $(".logo").addClass("inactive");
+    $(".sidebar-play").addClass("active");
+    $(".navbar-play").addClass("text-pink");
+  }
+}
+
 $(document).ready(function() {
   var touch = "ontouchstart" in document.documentElement;
   if(touch) {
     // no special handling for touch devices
   }
   $(window).bind("scroll", function() {
-    var playPosition = $("#play").offset().top;
-    var aboutPosition = $("#about").offset().top;
-    var stuffPosition = $("#stuff").offset().top;
-    var contactPosition = $("#contact").offset().top;
-    var scrollTop = $(window).scrollTop();
-    var offset = 10;
-
-    $(".logo").removeClass("inactive");
-    $(".sidebar-item").removeClass("active");
-    $(".navbar-item").removeClass("text-pink text-red text-green text-blue");
-
-    if (scrollTop > contactPosition + offset) {
-      $(".sidebar-contact").addClass("active");
-      $(".navbar-contact").addClass("text-blue");
-    } else if (scrollTop > stuffPosition + offset) {
-      $(".sidebar-stuff").addClass("active");
-      $(".navbar-stuff").addClass("text-green");
-    } else if (scrollTop > aboutPosition - 74 + offset) {
-      $(".sidebar-about").addClass("active");
-      $(".navbar-about").addClass("text-red");
-    } else {
-      $(".logo").addClass("inactive");
-      $(".sidebar-play").addClass("active");
-      $(".navbar-play").addClass("text-pink");
-    }
+    adaptBars();
   });
 });
