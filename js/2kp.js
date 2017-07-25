@@ -1,25 +1,7 @@
-function toggleNavigation() {
-  var nav = $(".navigation");
-  nav.slideToggle(400, function() {
-    nav.toggleClass('opened');
-    if (nav.is(".opened")) {
-      $(".fa-bars").hide();
-      $(".fa-close").show();
-    } else {
-      $(".fa-bars").show();
-      $(".fa-close").hide();
-    }
-  });
-}
-
-function toggleNavigationItems() {
-  $(".nav-item").toggle();
-}
-
-function closeNavigation() {
-  if (! $(".navigation-toggler").is(":hidden")) {
-    toggleNavigation();
-  }
+function scrollTo(id) {
+  $("html, body").animate({
+     scrollTop: ($("#" + id).offset().top - 50)
+  }, 400);
 }
 
 function showTrophies() {
@@ -52,38 +34,33 @@ $(function() {
 });
 
 $(document).ready(function() {
-  $("a.top").click(function() {
-     $("html, body").animate({
-       scrollTop: 0
-     }, 400);
-  });
-
   var touch = "ontouchstart" in document.documentElement;
   if(touch) {
-    $("#logo").removeClass("w3-padding-16");
-    $("#logo").addClass("fixed-navigation-padding");
-    $("#navigation").addClass("fixed");
-    $("#main").addClass("no-margin-top");
-    $(window).bind("scroll", function() {
-      var headerHeight = $("#header").height();
-      if ($(window).scrollTop() > headerHeight - 43) {
-        $(".navigation-toggler-logo").show();
-      } else {
-        $(".navigation-toggler-logo").hide();
-      }
-    });
-  } else {
-    $(window).bind("scroll", function() {
-      var headerHeight = $("#header").height();
-      if ($(window).scrollTop() > headerHeight) {
-        $(".navigation-toggler-logo").show();
-		$(".nav-item").hide();
-        $("#navigation").addClass("fixed");
-      } else {
-        $(".navigation-toggler-logo").hide();
-		$(".nav-item").show();
-        $("#navigation").removeClass("fixed");
-      }
-    });
+    // no special handling for touch devices
   }
+  $(window).bind("scroll", function() {
+    var playPosition = $("#play").offset();
+    var aboutPosition = $("#about").offset();
+    var stuffPosition = $("#stuff").offset();
+    var contactPosition = $("#contact").offset();
+    var scrollTop = $(window).scrollTop();
+    var offset = 0;
+
+    $(".sidebar-item").removeClass("active");
+    $(".navbar-item").removeClass("text-pink text-red text-green text-blue");
+
+    if (scrollTop > playPosition - offset) {
+      $(".sidebar-play").addClass("active");
+      $(".navbar-play").addClass("text-pink");
+    } else if (scrollTop > aboutPosition - offset) {
+      $(".sidebar-about").addClass("active");
+      $(".navbar-about").addClass("text-red");
+    } else if (scrollTop > stuffPosition - offset) {
+      $(".sidebar-stuff").addClass("active");
+      $(".navbar-stuff").addClass("text-green");
+    } else if (scrollTop > contactPosition - offset) {
+      $(".sidebar-contact").addClass("active");
+      $(".navbar-contact").addClass("text-blue");
+    }
+  });
 });
