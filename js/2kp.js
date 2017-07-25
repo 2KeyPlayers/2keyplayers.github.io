@@ -1,6 +1,13 @@
-function scrollTo(id) {
+function scrollTo(id, offset) {
+  var top = 0;
+  if (id) {
+    top = $("#" + id).offset().top;
+  }
+  if (offset == undefined) {
+    offset = 0;
+  }
   $("html, body").animate({
-     scrollTop: ($("#" + id).offset().top - 50)
+    scrollTop: (top + offset)
   }, 400);
 }
 
@@ -39,28 +46,30 @@ $(document).ready(function() {
     // no special handling for touch devices
   }
   $(window).bind("scroll", function() {
-    var playPosition = $("#play").offset();
-    var aboutPosition = $("#about").offset();
-    var stuffPosition = $("#stuff").offset();
-    var contactPosition = $("#contact").offset();
+    var playPosition = $("#play").offset().top;
+    var aboutPosition = $("#about").offset().top;
+    var stuffPosition = $("#stuff").offset().top;
+    var contactPosition = $("#contact").offset().top;
     var scrollTop = $(window).scrollTop();
-    var offset = 0;
+    var offset = 10;
 
+    $(".logo").removeClass("inactive");
     $(".sidebar-item").removeClass("active");
     $(".navbar-item").removeClass("text-pink text-red text-green text-blue");
 
-    if (scrollTop > playPosition - offset) {
-      $(".sidebar-play").addClass("active");
-      $(".navbar-play").addClass("text-pink");
-    } else if (scrollTop > aboutPosition - offset) {
-      $(".sidebar-about").addClass("active");
-      $(".navbar-about").addClass("text-red");
-    } else if (scrollTop > stuffPosition - offset) {
-      $(".sidebar-stuff").addClass("active");
-      $(".navbar-stuff").addClass("text-green");
-    } else if (scrollTop > contactPosition - offset) {
+    if (scrollTop > contactPosition + offset) {
       $(".sidebar-contact").addClass("active");
       $(".navbar-contact").addClass("text-blue");
+    } else if (scrollTop > stuffPosition + offset) {
+      $(".sidebar-stuff").addClass("active");
+      $(".navbar-stuff").addClass("text-green");
+    } else if (scrollTop > aboutPosition - 74 + offset) {
+      $(".sidebar-about").addClass("active");
+      $(".navbar-about").addClass("text-red");
+    } else {
+      $(".logo").addClass("inactive");
+      $(".sidebar-play").addClass("active");
+      $(".navbar-play").addClass("text-pink");
     }
   });
 });

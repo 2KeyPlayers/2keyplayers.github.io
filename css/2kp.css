@@ -15,12 +15,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 a {
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+}
+
 .link {
   white-space: nowrap;
 }
 .link-icon {
   font-size: 80%;
   padding-right: 2px;
+}
+.inactive {
+   pointer-events: none;
+   cursor: default;
 }
 
 .pink {
@@ -106,8 +114,32 @@ hr {
   width: 200px;
 }
 
+header {
+  /*background-image:url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;*/
+  /*background-attachment: fixed;*/
+  position: relative;
+  height: 100vh;
+}
+header > div {
+  width: 40%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header hr {
+  display: inline-block;
+}
+
 #play img {
-  width: 50%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#play h4 {
+  margin-top: 0;
 }
 
 .navbar {
@@ -131,10 +163,16 @@ hr {
   fill: #000000;
 }
 #navbar .logo svg path {
-  fill: #f1f1f1;
+  fill: #ffffff;
+}
+#sidebar .logo.inactive svg path {
+  fill: #222222;
+}
+#navbar .logo.inactive svg path {
+  fill: #000000;
 }
 #sidebar .logo:hover svg path {
-  fill: #f1f1f1;
+  fill: #ffffff;
 }
 #navbar .logo:hover svg path {
   fill: #8f8f8f;
@@ -210,7 +248,7 @@ footer .link-icon {
 }
 
 @media (max-width:768px) {
-  #play img {
+  header > div {
     width: 80%;
   }
 
@@ -223,7 +261,7 @@ footer .link-icon {
 }
 
 @media (max-width:600px) {
-  #play img {
+  header > div {
     width: 100%;
   }
 
