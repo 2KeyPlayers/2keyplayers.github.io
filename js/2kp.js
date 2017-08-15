@@ -18,6 +18,12 @@ function hideTrophies() {
   document.getElementById("sport-junkies").style.display = "none";
 }
 
+function toggleKeyPlayer(nr) {
+  var kp = $(".keyplayer-" + nr);
+  kp.toggleClass("active");
+  kp.next("div").toggleClass("w3-hide");
+}
+
 $(function() {
   // Check if the device supports touch events
   if("ontouchstart" in document.documentElement) {
@@ -63,7 +69,7 @@ function adaptBars() {
     $(".navbar-about").addClass("text-red");
   } else {
     $(".logo").addClass("inactive");
-    $(".sidebar-play").addClass("active");
+    $(".sidebar-2").addClass("active");
     $(".navbar-play").addClass("text-pink");
   }
 }

@@ -1,0 +1,28 @@
+/* ----- 2 Key Players -> Dark Theme ----- */
+
+body {
+  color: #757575;
+  background-color: #000000;
+}
+
+/* Headers */
+h1,h2,h3,h4,h5,h6 {
+  color: #f1f1f1;
+}
+
+/* Sidebar & Navbar */
+.navbar {
+  background: #222222;
+}
+#navbar a {
+  border-bottom: 1px solid #8f8f8f;
+}
+#sidebar a.active, #navbar a.active {
+  background-color: #000000 !important;
+}
+
+/* 2 brothers */
+.value {
+  color: #000000;
+  background-color: #f1f1f1;
+}
