@@ -62,6 +62,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
+  <link rel="stylesheet" href="css/icomoon.css" />
   <link rel="stylesheet" href="css/w3.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/2kp.css" />
@@ -70,35 +71,14 @@
 
 <body>
 
-  <!-- Sidebar (hidden on small screens) -->
-  <nav id="sidebar" class="navbar w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <a href="javascript:scrollTo('2-brothers', -24)" class="sidebar-2 sidebar-item w3-bar-item w3-button w3-padding-large hover-text-red">
-      <span class="fa-stack" style="margin-right:24px;margin-top:10px;margin-bottom:10px">
-        <i class="fa fa-user fa-stack-1x" style="font-size:36px;margin-left:20px"></i>
-        <i class="fa fa-user fa-stack-2x" style="font-size:36px;margin-right:20px"></i>
-      </span>
-    </a>
-    <a href="javascript:scrollTo('stuff', 50)" class="sidebar-k sidebar-item w3-bar-item w3-button w3-padding-large hover-text-green">
-      <i class="fa fa-eye w3-xxlarge"></i>
-    </a>
-    <a href="javascript:scrollTo('contact', 50)" class="sidebar-p sidebar-item w3-bar-item w3-button w3-padding-large hover-text-blue">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-    </a>
-  </nav>
-
-  <!-- Navbar (hidden on medium and large screens) -->
-  <div id="navbar" class="navbar w3-top w3-hide-large w3-hide-medium">
-    <div class="w3-bar w3-center w3-large">
-      <a href="javascript:scrollTo('about', 10)" class="navbar-2 navbar-item w3-bar-item w3-button hover-text-red" style="padding-top:5px!important;padding-bottom:5px!important">
-        <span class="fa-stack" style="margin-right:12px">
-          <i class="fa fa-user fa-stack-1x" style="font-size:18px;margin-right:10px;height:24px"></i>
-          <i class="fa fa-user fa-stack-2x" style="font-size:18px;margin-left:10px;margin-top:12px"></i>
-        </span>
-      </a>
-      <a href="javascript:scrollTo('stuff', 10)" class="navbar-k navbar-item w3-bar-item w3-button hover-text-green"><i class="fa fa-eye"></i></a>
-      <a href="javascript:scrollTo('contact', 10)" class="navbar-p navbar-item w3-bar-item w3-button hover-text-blue"><i class="fa fa-envelope"></i></a>
+  <!-- Navbar -->
+  <nav id="navbar" class="w3-top">
+    <div class="w3-bar w3-content w3-center w3-xlarge">
+      <a href="javascript:scrollTo('2-brothers', 10)" class="navbar-2 navbar-item w3-bar-item w3-button hover-text-red"><span class="icon-2"></span></a>
+      <a href="javascript:scrollTo('apps-n-games', 10)" class="navbar-k navbar-item w3-bar-item w3-button hover-text-green"><span class="icon-k"></span></a>
+      <a href="javascript:scrollTo('players-lounge', 10)" class="navbar-p navbar-item w3-bar-item w3-button hover-text-blue"><span class="icon-p"></span></a>
     </div>
-  </div>
+  </nav>
 
   <!-- Content -->
   <div class="w3-padding-large" id="main">
@@ -116,7 +96,7 @@
     <!-- About -->
     <div id="2-brothers" class="w3-content">
       <h2 class="text-red underline"><span class="bold">2</span> brothers</h2>
-      <!--hr class="w3-opacity" /-->
+
       <p>
         We are <span class="w3-text-light-grey">2</span> brothers, <a class="link hover-text-red" href="http://steamcommunity.com/id/2keyplayers"><i class="link-icon text-red fa fa-link"></i>gamers</a>, <a class="link hover-text-red" href="javascript:showTrophies()"><i class="link-icon text-red fa fa-camera"></i>sport junkies</a> and recently also iOS developers from &quot;the little big country&quot; <a class="link hover-text-red" href="http://slovakia.travel/en"><i class="link-icon text-red fa fa-link"></i>Slovakia</a>. It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. We love playing all kinds of games and we know, that if a team wants to win a game, it has to have at least one <span class="w3-text-light-grey">key player</span>. On our team, we have <span class="w3-text-light-grey">2</span> of them :)
       </p>
@@ -158,9 +138,8 @@
       <h2 class="text-green underline"><span class="bold">Key</span> apps &amp; games</h2>
 
       <div class="w3-row-padding">
-        <div class="w3-col-6">
-        </div>
-        <div class="w3-col-6">
+        <div class="w3-col tiliard">
+
         </div>
       </div>
     </div>

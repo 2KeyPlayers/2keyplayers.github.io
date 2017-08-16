@@ -11,15 +11,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Sidebar & Navbar */
-.navbar {
+#navbar {
   background: #222222;
-}
-#navbar a {
   border-bottom: 1px solid #8f8f8f;
 }
-#sidebar a.active, #navbar a.active {
+/*#navbar a {
+  border-bottom: 1px solid #8f8f8f;
+}*/
+/*#navbar a.active {
   background-color: #000000 !important;
-}
+}*/
 
 /* 2 brothers */
 .value {

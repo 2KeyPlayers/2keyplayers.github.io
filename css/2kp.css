@@ -1,16 +1,9 @@
 /* ----- 2 Key Players ----- */
 
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-/* set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px}
-/* add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 /* custom w3- classes */
-.w3-padding-top-64 {
-  padding-top: 64px !important;
-}
+.w3-padding-top-64 {padding-top: 64px !important;}
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 body {
   color: #494949; /*#414141;*/
@@ -94,19 +87,20 @@ a:focus {
 
 /* Sidebar & Navbar */
 
-.navbar {
-  background: #d9d9d9;
-}
-#navbar a {
+#navbar {
+  background: #000000;
   border-bottom: 1px solid #8f8f8f;
 }
+/*#navbar a {
+  border-bottom: 1px solid #8f8f8f;
+}*/
 #navbar .w3-bar-item {
-  width: 20% !important;
-  padding: 10px 16px 9px 16px !important;
+  width: 33.33333% !important;
+  padding: 10px !important;
 }
-#sidebar a.active, #navbar a.active {
+/*#navbar a.active {
   background-color: #000000 !important;
-}
+}*/
 
 /* Intro */
 #intro {
@@ -173,7 +167,9 @@ a:focus {
 }
 
 /* Apps & Games */
-
+.tiliard {
+  height: 200px;
+}
 
 /* Players' lounge */
 .location:hover i {
