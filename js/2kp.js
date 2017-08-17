@@ -46,31 +46,19 @@ $(function() {
   }
 });
 
-function adaptBars() {
-  var playPosition = $("#play").offset().top;
-  var aboutPosition = $("#about").offset().top;
-  var stuffPosition = $("#stuff").offset().top;
-  var contactPosition = $("#contact").offset().top;
+function adaptNavbar() {
+  var position2 = $("#2-brothers").offset().top;
+  var positionK = $("#apps-n-games").offset().top;
+  var positionP = $("#players-lounge").offset().top;
   var scrollTop = $(window).scrollTop();
-  var offset = 10;
 
-  $(".logo").removeClass("inactive");
-  $(".sidebar-item").removeClass("active");
   $(".navbar-item").removeClass("text-pink text-red text-green text-blue");
-
-  if (scrollTop > contactPosition + offset) {
-    $(".sidebar-contact").addClass("active");
-    $(".navbar-contact").addClass("text-blue");
-  } else if (scrollTop > stuffPosition + offset) {
-    $(".sidebar-stuff").addClass("active");
-    $(".navbar-stuff").addClass("text-green");
-  } else if (scrollTop > aboutPosition - 74 + offset) {
-    $(".sidebar-about").addClass("active");
-    $(".navbar-about").addClass("text-red");
-  } else {
-    $(".logo").addClass("inactive");
-    $(".sidebar-2").addClass("active");
-    $(".navbar-play").addClass("text-pink");
+  if (scrollTop > positionP) {
+    $(".navbar-p").addClass("text-blue");
+  } else if (scrollTop > positionK) {
+    $(".navbar-k").addClass("text-green");
+  } else if (scrollTop > position2 - 66) {
+    $(".navbar-2").addClass("text-red");
   }
 }
 
@@ -80,6 +68,6 @@ $(document).ready(function() {
     // no special handling for touch devices
   }
   $(window).bind("scroll", function() {
-    adaptBars();
+    adaptNavbar();
   });
 });

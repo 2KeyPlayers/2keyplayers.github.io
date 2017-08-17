@@ -2,7 +2,7 @@
 
 /* custom w3- classes */
 .w3-container,.w3-panel{padding:0 16px}
-.w3-padding-top-64 {padding-top: 64px !important;}
+.w3-padding-top-64{padding-top: 64px !important;}
 
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
@@ -96,21 +96,14 @@ a:focus {
 }
 
 /* Sidebar & Navbar */
-
 #navbar {
   background: #000000;
   border-bottom: 1px solid #8f8f8f;
 }
-/*#navbar a {
-  border-bottom: 1px solid #8f8f8f;
-}*/
 #navbar .w3-bar-item {
   width: 33.33333% !important;
-  padding: 10px !important;
+  padding: 10px 10px 4px 10px !important;
 }
-/*#navbar a.active {
-  background-color: #000000 !important;
-}*/
 
 /* Intro */
 #intro {
@@ -156,8 +149,6 @@ a:focus {
   padding: 2px 16px;
 }
 .keyplayer a img {
-  /*width: 40%;
-  max-width: 256px;*/
   filter: grayscale(100%);
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -169,16 +160,23 @@ a:focus {
 .keyplayer a.active img, .keyplayer a:hover img {
   filter: none;
 }
+.key {
+  color: #757575;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
 .value {
   color: #d9d9d9;
   background-color: #f1f1f1;
+  border-radius: 14px;
 }
-
 .chip {
   display: inline-block;
   padding: 0 50px 0 64px;
   height: 100px;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 100px;
   border-radius: 50px;
   background-color: #222222;
@@ -195,18 +193,22 @@ a:focus {
 }
 .chip > div {
   font-size: 15px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 /* Apps & Games */
 .tiliard {
   width: 100%;
   height: 200px;
-  background:
+  /*background:
 		linear-gradient(cyan, transparent),
 		linear-gradient(-45deg, magenta, transparent),
 		linear-gradient(45deg, yellow, transparent);
-	background-blend-mode: multiply;
+	background-blend-mode: multiply;*/
+  background-image: url("../img/tiliard/tiliard-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  /*background-attachment: fixed;*/
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -218,8 +220,9 @@ a:focus {
   max-width: 120px;
 }
 .tiliard *, .tiliard *::before, .tiliard *::after{
+  -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 figcaption {
@@ -253,11 +256,10 @@ figcaption div:after {
   background: #000000;
 }
 figure img {
+  -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s linear;
-          transition: all 0.3s linear;
+  transition: all 0.3s linear;
   opacity: 1;
-  /*width: 50%;
-  max-width: 120px;*/
 }
 /*figure:hover figcaption{
  background: rgba(255,255,255,0.3);
@@ -271,12 +273,26 @@ figcaption:hover div:after {
 }
 figure:hover img {
   opacity: 0;
-  /*width: 0%;*/
-  /*-webkit-transform: scale3d(1.2, 1.2, 1);
-          transform: scale3d(1.2, 1.2, 1);*/
 }
 
 /* Players' lounge */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #000000;
+  background: #f1f1f1;
+}
+ul li a {
+  width: 100%;
+}
 .location:hover i {
   color: #ff6464 !important;
 }
@@ -308,7 +324,8 @@ footer .link-icon {
   padding-right: 1px;
 }
 
-@media (max-width:768px) {
+/* Responsivity */
+@media (max-width:780px) {
   h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}
 
   hr {
@@ -319,28 +336,29 @@ footer .link-icon {
     width: 100%;
   }
 
-  #play img {
-    width: 60%;
-  }
-  #play br {
-    display: inline;;
-  }
-
   .keyplayer.no1 {
     padding-right: 12px;
   }
   .keyplayer.no2 {
     padding-left: 12px;
   }
+  .chip {
+    padding: 0 50px 0 64px;
+    height: 100px;
+    font-size: 20px;
+    line-height: 100px;
+    border-radius: 50px;
+  }
+  .chip img {
+    margin: -12px 32px 0 -64px;
+    height: 128px;
+    width: 128px;
+  }
 }
 
-@media (max-width:600px) {
+@media (max-width:728px) {
   header > div {
     width: 100%;
-  }
-
-  #play img {
-    width: 80%;
   }
 
   .keyplayer.no1 {
@@ -349,5 +367,17 @@ footer .link-icon {
   .keyplayer.no2 {
     padding-left: 0px;
     padding-top: 32px;
+  }
+  .chip {
+    padding: 0 50px 0 64px;
+    height: 100px;
+    font-size: 20px;
+    line-height: 100px;
+    border-radius: 50px;
+  }
+  .chip img {
+    margin: -12px 32px 0 -64px;
+    height: 128px;
+    width: 128px;
   }
 }
