@@ -87,9 +87,7 @@
     <header id="intro" class="w3-container w3-padding-32 w3-center">
       <div>
         <img src="img/2keyplayers.svg" class="w3-image" alt="2 Key Players" />
-        <a href="javascript:scrollTo('about', -24)" class="w3-hide-small"><i class="fa fa-angle-double-down fa-3x"></i></a>
-        <a href="javascript:scrollTo('about', 10)" class="w3-hide-large w3-hide-medium"><i class="fa fa-angle-double-down fa-3x"></i></a>
-        <h4>The <span class="bold">key players</span> for the <span class="bold">key</span> <br/><span class="bold">apps</span> &amp; <span class="bold">games</span>.</h4>
+        <h4 class="w3-wide">The <span class="bold">key players</span> for the <span class="bold">key</span> <br/><span class="bold">apps</span> &amp; <span class="bold">games</span>.</h4>
       </div>
     </header>
 
@@ -107,27 +105,31 @@
       </div>
       <div class="keyplayers w3-row w3-center w3-padding-16 w3-section">
         <div class="keyplayer no1 w3-half w3-section">
-          <a href="javascript:toggleKeyPlayer(1)" class="keyplayer-1"><img src="img/bilosista.jpg" class="w3-image w3-circle" alt="Key Player 1" /></a>
-          <div class="w3-hide">
-            <h3 class="w3-padding-16">Key Player 1</h3>
-            <p class="w3-left-align w3-wide">A.k.a.</p>
-            <p class="value w3-right-align">Patrik, <a class="link hover-text-red" href="https://twitter.com/bilosista"><i class="link-icon text-red fa fa-twitter"></i>Bilosista</a></p>
-            <p class="w3-left-align w3-wide">Works</p>
-            <p class="value w3-right-align"><a class="link hover-text-red" href="https://ibm.com"><i class="link-icon text-red fa fa-link"></i>IBM</a></p>
-            <p class="w3-left-align w3-wide">Loves</p>
-            <p class="value w3-right-align"><a class="link hover-text-red" href="https://twitter.com/biflosistka"><i class="link-icon text-red fa fa-heart"></i>Biflosistka</a>, games, movies, tennis, badminton, pool, basketball</p>
+          <div class="chip">
+            <a href="javascript:toggleKeyPlayer(1)" class="keyplayer-1"><img src="img/bilosista.jpg" class="w3-image w3-circle" alt="Key Player 1" />
+            Key Player 1</a>
+            <div class="w3-hide">
+              <p class="w3-right-align w3-wide">A.k.a.</p>
+              <p class="value">Patrik, <a class="link hover-text-red" href="https://twitter.com/bilosista"><i class="link-icon text-red fa fa-twitter"></i>Bilosista</a></p>
+              <p class="w3-right-align w3-wide">Works</p>
+              <p class="value"><a class="link hover-text-red" href="https://ibm.com"><i class="link-icon text-red fa fa-link"></i>IBM</a></p>
+              <p class="w3-right-align w3-wide">Loves</p>
+              <p class="value"><a class="link hover-text-red" href="https://twitter.com/biflosistka"><i class="link-icon text-red fa fa-heart"></i>Biflosistka</a>, games, movies, tennis, badminton, pool, basketball</p>
+            </div>
           </div>
         </div>
         <div class="keyplayer no2 w3-half w3-section">
-          <a href="javascript:toggleKeyPlayer(2)" class="keyplayer-2"><img src="img/maek.jpg" class="w3-image w3-circle" alt="Key Player 2" /></a>
-          <div class="w3-hide">
-            <h3 class="w3-padding-16">Key Player 2</h3>
-            <p class="w3-left-align w3-wide">A.k.a</p>
-            <p class="value w3-right-align">Marek, <a class="link hover-text-red" href="https://twitter.com/MaekToth"><i class="link-icon text-red fa fa-twitter"></i>MaeK</a></p>
-            <p class="w3-left-align w3-wide">Works</p>
-            <p class="value w3-right-align"><a class="link hover-text-red" href="https://www.healthcare.siemens.com"><i class="link-icon text-red fa fa-link"></i>SiemensHealth</a></p>
-            <p class="w3-left-align w3-wide">Loves</p>
-            <p class="value w3-right-align"><a class="link hover-text-red" href="https://twitter.com/neecusha"><i class="link-icon text-red fa fa-heart"></i>Neecusha</a>, games, movies, basketball, biking, badminton, pool</p>
+          <div class="chip">
+            <a href="javascript:toggleKeyPlayer(2)" class="keyplayer-2"><img src="img/maek.jpg" class="w3-image w3-circle" alt="Key Player 2" />
+            Key Player 2</a>
+            <div class="w3-hide">
+              <p class="w3-right-align w3-wide">A.k.a</p>
+              <p class="value">Marek, <a class="link hover-text-red" href="https://twitter.com/MaekToth"><i class="link-icon text-red fa fa-twitter"></i>MaeK</a></p>
+              <p class="w3-right-align w3-wide">Works</p>
+              <p class="value"><a class="link hover-text-red" href="https://www.healthcare.siemens.com"><i class="link-icon text-red fa fa-link"></i>SiemensHealth</a></p>
+              <p class="w3-right-align w3-wide">Loves</p>
+              <p class="value"><a class="link hover-text-red" href="https://twitter.com/neecusha"><i class="link-icon text-red fa fa-heart"></i>Neecusha</a>, games, movies, basketball, biking, badminton, pool</p>
+            </div>
           </div>
         </div>
       </div>
@@ -137,9 +139,14 @@
     <div id="apps-n-games" class="w3-padding-64 w3-content">
       <h2 class="text-green underline"><span class="bold">Key</span> apps &amp; games</h2>
 
-      <div class="w3-row-padding">
-        <div class="w3-col tiliard">
-
+      <div class="w3-row" style="margin-top:15px">
+        <div class="w3-col">
+          <a href="javascript:toggleTiliard()">
+            <figure class="tiliard">
+              <img src="img/8tile.png" alt="8 tile" class="tile" />
+              <figcaption><div>Tiliard</div></figcation>
+            </figure>
+          </a>
         </div>
       </div>
     </div>
