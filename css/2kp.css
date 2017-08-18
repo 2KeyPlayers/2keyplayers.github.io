@@ -169,7 +169,7 @@ a:focus {
 }
 .value {
   color: #d9d9d9;
-  background-color: #f1f1f1;
+  background-color: #ccccc;
   border-radius: 14px;
 }
 .chip {
@@ -276,42 +276,41 @@ figure:hover img {
 }
 
 /* Players' lounge */
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.map {
+  height: 300px;
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-position: center;
 }
-ul li {
-  display: inline-block;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+
+#players-lounge a {
+  font-size: 18px;
+}
+#players-lounge a span {
+  color: #f1f1f1;
+}
+#players-lounge a span .fa-inverse {
   color: #000000;
-  background: #f1f1f1;
 }
-ul li a {
-  width: 100%;
-}
-.location:hover i {
+.location:hover span {
   color: #ff6464 !important;
 }
-.mail:hover i {
+.mail:hover span {
   color: #6ec9d4 !important;
 }
-.twitter:hover i {
+.twitter:hover span {
   color: #1da1f2 !important;
 }
-.facebook:hover i {
+.facebook:hover span {
   color: #3b5998 !important;
 }
-.tumblr:hover i {
+.tumblr:hover span {
   color: #3a475c !important;
 }
-.github:hover i {
+.github:hover span {
   color: #6ec9d4 !important;
 }
-.steam:hover i {
+.steam:hover span {
   color: #c6d4df !important;
 }
 
