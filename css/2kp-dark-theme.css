@@ -10,13 +10,14 @@ h1,h2,h3,h4,h5,h6 {
   color: #f1f1f1;
 }
 
-/* Sidebar & Navbar */
+/* Navbar */
 #navbar {
+  color: #8f8f8f;
   background: #222222;
   border-bottom: 1px solid #8f8f8f;
 }
 
-/* 2 brothers */
+/* Others */
 .value {
   color: #000000;
   background-color: #f1f1f1;

@@ -1,0 +1,29 @@
+RewriteEngine on
+RewriteOptions inherit
+
+#RewriteCond %{HTTP:Accept-Language} ^sk [NC]
+#RewriteRule ^$ http://localhost:8080/sk/ [L,R=301]
+
+RewriteRule ^(en|sk)/2-brothers$ index.php?nav=2-borthers&lang=$1 [L]
+RewriteRule ^(en|sk)/apps-n-games$ index.php?nav=apps-n-games&lang=$1 [L]
+RewriteRule ^(en|sk)/tiliard$ index.php?nav=tiliard&lang=$1 [L]
+RewriteRule ^(en|sk)/contact$ index.php?nav=players-lounge&lang=$1 [L]
+RewriteRule ^(en|sk)/players-lounge$ index.php?nav=players-lounge&lang=$1 [L]
+RewriteRule ^2-brothers$ index.php?nav=2-brothers&lang=en [L]
+RewriteRule ^apps-n-games$ index.php?nav=apps-n-games&lang=en [L]
+RewriteRule ^tiliard$ index.php?nav=tiliard&lang=en [L]
+RewriteRule ^players-lounge$ index.php?nav=players-lounge&lang=en [L]
+RewriteRule ^contact$ index.php?nav=players-lounge&lang=en [L]
+
+RewriteCond %{DOCUMENT_ROOT}/$2\.php -f
+RewriteRule ^(en|sk)/(.*)$ $2.php?lang=$1 [L,QSA]
+
+RewriteCond %{DOCUMENT_ROOT}/$1\.php -f
+RewriteRule (.*) $1.php?lang=en [L,QSA]
+
+RewriteRule ^(en|sk)(/)?$ index.php?lang=$1 [L]
+RewriteRule ^(/)?$ index.php?lang=en [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) index.php?lang=en [L,QSA]

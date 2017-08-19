@@ -1,23 +1,28 @@
 /* ----- 2 Key Players ----- */
 
-/* custom w3- classes */
+/* Custom w3- classes */
 .w3-container,.w3-panel{padding:0 16px}
-.w3-padding-top-64{padding-top: 64px !important;}
+.w3-padding-top-32{padding-top: 32px !important;}
+.w3-padding-bottom-64{padding-bottom: 64px !important;}
 
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
-/**, *::before, *::after{
-  -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-}*/
-
 body {
-  color: #494949; /*#414141;*/
+  color: #494949;
   background-color: #f9fafc;
 }
 
 figure {
   margin: 0;
+}
+
+/* Slick */
+.slick-next {
+  right: 5px;
+}
+.slick-prev {
+  left: 5px;
+  z-index: 1;
 }
 
 /* Font */
@@ -26,6 +31,12 @@ figure {
 }
 .bold {
   font-weight: 700;
+}
+.underline {
+  display: inline-block;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  border-bottom: solid 1px #757575;
 }
 
 /* Lines */
@@ -38,15 +49,6 @@ hr {
 /* Headers */
 h1,h2,h3,h4,h5,h6 {
   color: #404040;
-}
-h2.bold {
-  font-weight: 700;
-}
-h2.underline {
-  display: inline-block;
-  padding-bottom: 16px;
-  padding-right: 16px;
-  border-bottom: solid 1px #757575;
 }
 
 /* Colors */
@@ -88,17 +90,30 @@ a:focus {
 }
 .link-icon {
   font-size: 80%;
-  padding-right: 2px;
+  padding-right: 3px;
 }
 .inactive {
    pointer-events: none;
    cursor: default;
 }
 
-/* Sidebar & Navbar */
+/* Buttons */
+.download {
+  width: 180px;
+  padding: 32px 0;
+}
+
+/* Navbar */
 #navbar {
+  margin-top: -51px;
   background: #000000;
   border-bottom: 1px solid #8f8f8f;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#navbar.active {
+  margin-top: 0;
 }
 #navbar .w3-bar-item {
   width: 33.33333% !important;
@@ -113,31 +128,38 @@ a:focus {
   /*background-attachment: fixed;*/
   position: relative;
   height: 100vh;
+  padding: 0 !important;
 }
-#intro > div {
-  width: 40%;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#intro div {
+  width: 100%;
 }
-#intro hr {
-  display: inline-block;
+#intro .logo {
+  height: 70vh;
+  background: #222222;
+  border-bottom: 1px solid #8f8f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .motto {
+  height: 30vh;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #intro img {
-  width: 100%;
-  margin-bottom: 10px;
+  width: 40%;
+  padding: 32px;
 }
 #intro h4 {
   margin-top: 0;
 }
-#intro br {
-  display: none;
-}
 
 /* 2 brothers */
 .keyplayer {
+  float: left;
+  width: 49.99999%;
 }
 .keyplayer.no1 {
   padding-right: 32px;
@@ -154,9 +176,6 @@ a:focus {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-.keyplayer a.active, .keyplayer a:hover {
-  color: #f1f1f1;
-}
 .keyplayer a.active img, .keyplayer a:hover img {
   filter: none;
 }
@@ -171,12 +190,14 @@ a:focus {
   color: #d9d9d9;
   background-color: #ccccc;
   border-radius: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 .chip {
   display: inline-block;
   padding: 0 50px 0 64px;
   height: 100px;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 100px;
   border-radius: 50px;
   background-color: #222222;
@@ -191,13 +212,23 @@ a:focus {
   width: 128px;
   border-radius: 50%;
 }
+.chip > a {
+  color: #f1f1f1;
+}
+.chip > a.active {
+  color: #ff6464;
+}
 .chip > div {
   font-size: 15px;
   line-height: 24px;
 }
 
 /* Apps & Games */
-.tiliard {
+#tiliard {
+  margin-top: 16px;
+}
+
+figure {
   width: 100%;
   height: 200px;
   /*background:
@@ -205,21 +236,20 @@ a:focus {
 		linear-gradient(-45deg, magenta, transparent),
 		linear-gradient(45deg, yellow, transparent);
 	background-blend-mode: multiply;*/
+  /*background-attachment: fixed;*/
   background-image: url("../img/tiliard/tiliard-bg.jpg");
   background-size: cover;
   background-position: center;
-  /*background-attachment: fixed;*/
   overflow: hidden;
   position: relative;
-  display: inline-block;
-  text-align: center;
-  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.tiliard img {
-  width: 50%;
-  max-width: 120px;
+figure img {
+  width: 160px;
 }
-.tiliard *, .tiliard *::before, .tiliard *::after{
+figure *, figure *::before, figure *::after{
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -261,39 +291,132 @@ figure img {
   transition: all 0.3s linear;
   opacity: 1;
 }
-/*figure:hover figcaption{
- background: rgba(255,255,255,0.3);
-}*/
-figcaption:hover div {
+figcaption:hover div, .tiliard.active figcaption div {
   opacity: 1;
   top: 0;
 }
 figcaption:hover div:after {
   width: 50%;
 }
-figure:hover img {
+figure:hover img, .tiliard.active figure img {
   opacity: 0;
+}
+
+.half-details {
+  float: left;
+  width: 49.99999%;
+}
+.details, .half-details {
+  margin-top: 16px;
+}
+.half-details.left {
+  padding-right: 32px;
+}
+.half-details.right {
+  padding-left: 32px;
+}
+
+.screenshots {
+  width: 100%;
+}
+.screenshots img {
+  width: 100%;
+  height: auto;
+}
+
+.press .slick-slide {
+  margin: 0 32px;
+}
+.press a img {
+  height: 50px;
+  max-height: 50px;
+  width: auto;
+  filter: grayscale(100%);
+}
+.press a:hover img {
+  filter: none;
 }
 
 /* Players' lounge */
 .map {
+  position: relative;
   height: 300px;
   background-image: url("../img/map.jpg");
   background-size: cover;
   background-position: center;
+  filter: grayscale(100%);
+}
+.map:hover {
+  filter: none;
+}
+.marker {
+  color: #000000;
+  position: absolute;
+  bottom: 165px;
+  left: 9px;
+  right: 0;
+  font-size: 36px;
+}
+.marker span {
+  display: block;
+  margin-bottom: -14px;
+  font-size: 12px;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+.marker a:hover span {
+  opacity: 1;
+}
+/*@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes scaleee {
+  0%   { scale: 1 }
+  100% { scale: 1.3; }
+}
+.marker i:hover {
+  transform: scale(1.5);
+  -webkit-animation: scaleee 2s infinite;
+  -moz-animation:    scaleee 2s infinite;
+  -o-animation:      scaleee 2s infinite;
+  animation:         scaleee 2s infinite;
+}*/
+.map:hover .marker {
+  color: #ff6464;
 }
 
-#players-lounge a {
+.social {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.social a {
   font-size: 18px;
+  margin: 0 16px;
 }
-#players-lounge a span {
-  color: #f1f1f1;
-}
-#players-lounge a span .fa-inverse {
+.social a span {
   color: #000000;
+}
+.social a span .fa-inverse {
+  color: #f1f1f1;
 }
 .location:hover span {
   color: #ff6464 !important;
+}
+.mail .fa-envelope {
+  font-size: 18px;
 }
 .mail:hover span {
   color: #6ec9d4 !important;
@@ -308,10 +431,10 @@ figure:hover img {
   color: #3a475c !important;
 }
 .github:hover span {
-  color: #6ec9d4 !important;
+  color: #32aa4c !important;
 }
 .steam:hover span {
-  color: #c6d4df !important;
+  color: #1c2837 !important;
 }
 
 /* Footer */
@@ -324,17 +447,7 @@ footer .link-icon {
 }
 
 /* Responsivity */
-@media (max-width:780px) {
-  h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}
-
-  hr {
-    width: 160px;
-  }
-
-  header > div {
-    width: 100%;
-  }
-
+@media (max-width:800px) {
   .keyplayer.no1 {
     padding-right: 12px;
   }
@@ -342,24 +455,59 @@ footer .link-icon {
     padding-left: 12px;
   }
   .chip {
-    padding: 0 50px 0 64px;
-    height: 100px;
-    font-size: 20px;
-    line-height: 100px;
-    border-radius: 50px;
+    padding: 0 40px 0 48px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 80px;
+    border-radius: 40px;
   }
   .chip img {
-    margin: -12px 32px 0 -64px;
-    height: 128px;
-    width: 128px;
+    float: left;
+    margin: -8px 24px 0 -48px;
+    height: 96px;
+    width: 96px;
   }
 }
 
-@media (max-width:728px) {
-  header > div {
-    width: 100%;
+@media (max-width:768px) {
+  h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}
+
+  hr {
+    width: 160px;
   }
 
+  #intro .logo {
+    height: 60vh;
+  }
+  #intro .motto {
+    height: 40vh;
+  }
+  #intro img {
+    width: 60%;
+  }
+
+  .tiliard {
+    background-image: url("../img/tiliard/tiliard-bg-768.jpg");
+  }
+  .half-details {
+    width: 99.99999%;
+  }
+  .half-details.left {
+    padding-right: 0;
+  }
+  .half-details.right {
+    padding-left: 0;
+  }
+
+  .social a {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width:630px) {
+  .keyplayer {
+    width: 100%;
+  }
   .keyplayer.no1 {
     padding-right: 0px;
   }
@@ -367,16 +515,41 @@ footer .link-icon {
     padding-left: 0px;
     padding-top: 32px;
   }
+
   .chip {
-    padding: 0 50px 0 64px;
-    height: 100px;
-    font-size: 20px;
-    line-height: 100px;
-    border-radius: 50px;
+    padding: 0 35px 0 32px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 35px;
   }
   .chip img {
-    margin: -12px 32px 0 -64px;
-    height: 128px;
-    width: 128px;
+    float: left;
+    margin: -5px 20px 0 -32px;
+    height: 80px;
+    width: 80px;
   }
+}
+
+@media (max-width:600px) {
+  #intro .logo {
+    height: 55vh;
+  }
+  #intro .motto {
+    height: 45vh;
+  }
+  #intro img {
+    width: 100%;
+  }
+
+  .tiliard {
+    background-image: url("../img/tiliard/tiliard-bg-600.jpg");
+  }
+
+  .social a {
+    margin: 0;
+  }
+}
+
+@media (max-width:320px) {
+  h1{font-size:24px}h2{font-size:20px}h3{font-size:16px}h4{font-size:14px}h5{font-size:12px}
 }

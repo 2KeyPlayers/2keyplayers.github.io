@@ -1,4 +1,4 @@
-function scrollTo(id, offset) {
+function scrollTo(id, offset, jump) {
   var top = 0;
   if (id) {
     top = $("#" + id).offset().top;
@@ -8,7 +8,13 @@ function scrollTo(id, offset) {
   }
   $("html, body").animate({
     scrollTop: (top + offset)
-  }, 400);
+  }, ((jump == undefined) ? 400 : 0), 'swing', function() {
+    adaptNavbar(id);
+  });
+}
+
+function jumpTo(id, offset) {
+  scrollTo(id, offset, true);
 }
 
 function showTrophies() {
@@ -18,10 +24,24 @@ function hideTrophies() {
   document.getElementById("sport-junkies").style.display = "none";
 }
 
-function toggleKeyPlayer(nr) {
-  var kp = $(".keyplayer-" + nr);
-  kp.toggleClass("active");
-  kp.next("div").toggleClass("w3-hide");
+function toggleDetails(sel) {
+  var el = $("." + sel);
+  el.toggleClass("active");
+  el.next("div").toggleClass("w3-hide");
+  if (sel == "tiliard") {
+    var screenshots = $(".screenshots");
+    if (!screenshots.hasClass("slick-initialized")) {
+      screenshots.slick({
+        infinite: true
+        /*autoplay: true,
+        autoplaySpeed: 2000*/
+      });
+    }
+  }
+}
+
+function sendMail(to) {
+  document.location = "mailto:" + to + "@2kayplayers.com";
 }
 
 $(function() {
@@ -46,19 +66,42 @@ $(function() {
   }
 });
 
-function adaptNavbar() {
+function adaptNavbar(id) {
+  var positionMotto = $("#motto").offset().top;
   var position2 = $("#2-brothers").offset().top;
   var positionK = $("#apps-n-games").offset().top;
   var positionP = $("#players-lounge").offset().top;
   var scrollTop = $(window).scrollTop();
 
+  if (scrollTop >= positionMotto) {
+    var navbar = $("#navbar");
+    if (!navbar.hasClass("active")) {
+      navbar.addClass("active");
+    }
+  } else {
+    var navbar = $("#navbar");
+    if (navbar.hasClass("active")) {
+      $("#navbar").removeClass("active");
+    }
+  }
+
   $(".navbar-item").removeClass("text-pink text-red text-green text-blue");
-  if (scrollTop > positionP) {
-    $(".navbar-p").addClass("text-blue");
-  } else if (scrollTop > positionK) {
-    $(".navbar-k").addClass("text-green");
-  } else if (scrollTop > position2 - 66) {
-    $(".navbar-2").addClass("text-red");
+  if (id == undefined) {
+    if (scrollTop > positionP - 32) {
+      $(".navbar-p").addClass("text-blue");
+    } else if (scrollTop > positionK) {
+      $(".navbar-k").addClass("text-green");
+    } else if (scrollTop > position2 - 66) {
+      $(".navbar-2").addClass("text-red");
+    }
+  } else {
+    if (id == "players-lounge") {
+      $(".navbar-p").addClass("text-blue");
+    } else if (id == "apps-n-games") {
+      $(".navbar-k").addClass("text-green");
+    } else if (id == "2-brothers") {
+      $(".navbar-2").addClass("text-red");
+    }
   }
 }
 
@@ -68,6 +111,9 @@ $(document).ready(function() {
     // no special handling for touch devices
   }
   $(window).bind("scroll", function() {
+    adaptNavbar();
+  });
+  $(window).bind("resize", function() {
     adaptNavbar();
   });
 });
