@@ -105,7 +105,7 @@
             <img src="img/sport-junkies.jpg" style="width:100%;margin-bottom:-6px">
           </div>
         </div>
-        <div class="keyplayers w3-row w3-center w3-padding-32 w3-section">
+        <div class="keyplayers w3-row w3-center w3-padding-16 w3-section">
           <div class="keyplayer no1 w3-section">
             <div class="chip">
               <a href="javascript:toggleDetails('keyplayer-1')" class="keyplayer-1 hover-text-red"><img src="img/bilosista.jpg" class="w3-image w3-circle" alt="Key Player 1" />

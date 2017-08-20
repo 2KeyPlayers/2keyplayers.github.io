@@ -118,9 +118,11 @@ a:focus {
 
 /* Navbar */
 #navbar {
-  color: #000000;
-  background: #f1f1f1;
-  border-bottom: 1px solid #757575; /*#8f8f8f;*/
+  /*color: #000000;
+  background: #f1f1f1;*/
+  color: #757575;
+  background: #000000;
+  border-bottom: 1px solid #757575;
   margin-top: -51px;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -222,7 +224,7 @@ a:focus {
 }
 .chip img {
   float: left;
-  margin: -12px 32px 0 -64px;
+  margin: -12px 32px 0 -66px;
   height: 128px;
   width: 128px;
   border-radius: 50%;
@@ -485,7 +487,7 @@ footer .link-icon {
   }
   .chip img {
     float: left;
-    margin: -8px 24px 0 -48px;
+    margin: -8px 24px 0 -50px;
     height: 96px;
     width: 96px;
   }
@@ -546,7 +548,7 @@ footer .link-icon {
   }
   .chip img {
     float: left;
-    margin: -5px 20px 0 -32px;
+    margin: -5px 20px 0 -34px;
     height: 80px;
     width: 80px;
   }
