@@ -63,9 +63,8 @@
 
   <link rel="stylesheet" href="css/icomoon.css" />
   <link rel="stylesheet" href="css/w3.css" />
-  <link rel="stylesheet" href="css/animate.css" />
+  <!--link rel="stylesheet" href="css/animate.css" /-->
   <link rel="stylesheet" href="css/2kp.css" />
-  <link rel="stylesheet" href="css/2kp-dark-theme.css" />
 </head>
 
 <body>
@@ -99,7 +98,7 @@
         <h2 class="text-red underline"><span class="bold">2</span> brothers</h2>
 
         <p>
-          We are 2 brothers, <a class="link hover-text-red" href="http://steamcommunity.com/id/2keyplayers" target="_blank"><i class="link-icon text-red fa fa-link"></i>gamers</a>, <a class="link hover-text-red" href="javascript:showTrophies()"><i class="link-icon text-red fa fa-camera"></i>sport junkies</a> and recently also iOS developers from &quot;the little big country&quot; <a class="link hover-text-red" href="http://slovakia.travel/en" target="_blank"><i class="link-icon text-red fa fa-link"></i>Slovakia</a>. It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. And it did come true, after we released <a class="link hover-text-red" href="javascript:scrollTo('tiliard', -66)"><i class="link-icon text-red fa fa-hashtag"></i>Tiliard</a> back in 2012. We love playing all kinds of games and we know, that if a team wants to win a game, it has to have at least one key player. On our team, we have 2 of them :)
+          We are 2 brothers, <a class="link hover-text-red" href="http://steamcommunity.com/id/2keyplayers" target="_blank"><i class="link-icon text-red fa fa-link"></i>gamers</a>, <a class="link hover-text-red" href="javascript:showTrophies()"><i class="link-icon text-red fa fa-camera"></i>sport junkies</a> and recently also iOS developers from &quot;the little big country&quot; <a class="link hover-text-red" href="http://slovakia.travel/en" target="_blank"><i class="link-icon text-red fa fa-link"></i>Slovakia</a>. It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. And it did come true when we released <a class="link hover-text-red" href="javascript:showTiliard()"><i class="link-icon text-red fa fa-hashtag"></i>Tiliard</a> back in 2012. We love playing all kinds of games and we know, that if a team wants to win a game, it has to have at least one key player. On our team, we have 2 of them :)
         </p>
         <div id="sport-junkies" class="w3-modal" onclick="hideTrophies()">
           <div class="w3-modal-content w3-animate-zoom">
@@ -136,9 +135,9 @@
             </div>
           </div>
         </div>
-        <p style="padding-bottom:24px">
+        <!--p style="padding-bottom:24px">
           And what do we do besides making great apps &amp; games? We help out other indie developers by beta-testing their apps &amp; games and 'cause we would like to have as many apps &amp; games with Slovak language support as possible, we also translate them (if we get the chance).
-        </p>
+        </p-->
       </div>
 
       <!-- Apps & Games -->
@@ -258,10 +257,10 @@
       </div>
 
       <!-- Footer -->
-      <footer class="w3-content w3-small w3-text-grey w3-right-align">
+      <footer class="w3-content w3-tiny w3-text-grey w3-right-align">
         <hr />
         <div class="w3-section">
-          <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank" class="w3-hover-text-green"><!--i class="link-icon w3-text-green fa fa-link"></i-->w3.css</a></p>
+          <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank" class="w3-hover-text-green">w3.css</a> &amp; <a href="http://kenwheeler.github.io/slick/" target="_blank" class="hover-text-slick">slick</a></p>
           <p><a href="https://2keyplayers.com/" target="_blank" class="w3-hover-text-light-grey">2 Key Players</a> &copy; 2010-2017</p>
         </div>
       </footer>

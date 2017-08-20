@@ -23,6 +23,13 @@ function showTrophies() {
 function hideTrophies() {
   document.getElementById("sport-junkies").style.display = "none";
 }
+function showTiliard() {
+  var tiliard = $(".tiliard");
+  if (!tiliard.hasClass("active")) {
+    toggleDetails("tiliard");
+  }
+  scrollTo('tiliard', -66);
+}
 
 function toggleDetails(sel) {
   var el = $("." + sel);
