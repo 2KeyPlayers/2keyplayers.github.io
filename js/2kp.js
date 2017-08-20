@@ -32,9 +32,9 @@ function toggleDetails(sel) {
     var screenshots = $(".screenshots");
     if (!screenshots.hasClass("slick-initialized")) {
       screenshots.slick({
-        infinite: true
-        /*autoplay: true,
-        autoplaySpeed: 2000*/
+        infinite: true,
+        arrows: false,
+        dots: true
       });
     }
   }

@@ -24,6 +24,12 @@ figure {
   left: 5px;
   z-index: 1;
 }
+.slick-dots {
+  bottom: -32px;
+}
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+  color: #ffffff;
+}
 
 /* Font */
 .regular {
@@ -91,6 +97,9 @@ a:focus {
 .link-icon {
   font-size: 80%;
   padding-right: 3px;
+}
+.link-icon.fa-hashtag {
+  padding-right: 2px;
 }
 .inactive {
    pointer-events: none;
@@ -318,12 +327,16 @@ figure:hover img, .tiliard.active figure img {
 
 .screenshots {
   width: 100%;
+  margin-bottom: 32px !important;
 }
 .screenshots img {
   width: 100%;
   height: auto;
 }
 
+.press {
+  margin-bottom: 32px !important;
+}
 .press .slick-slide {
   margin: 0 32px;
 }

@@ -99,14 +99,14 @@
         <h2 class="text-red underline"><span class="bold">2</span> brothers</h2>
 
         <p>
-          We are <span class="bold">2</span> brothers, <a class="link hover-text-red" href="http://steamcommunity.com/id/2keyplayers" target="_blank"><i class="link-icon text-red fa fa-link"></i>gamers</a>, <a class="link hover-text-red" href="javascript:showTrophies()"><i class="link-icon text-red fa fa-camera"></i>sport junkies</a> and recently also iOS developers from &quot;the little big country&quot; <a class="link hover-text-red" href="http://slovakia.travel/en" target="_blank"><i class="link-icon text-red fa fa-link"></i>Slovakia</a>. It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. We love playing all kinds of games and we know, that if a team wants to win a game, it has to have at least one <span class="bold">key</span> <span class="bold">player</span>. On our team, we have <span class="bold">2</span> of them :)
+          We are 2 brothers, <a class="link hover-text-red" href="http://steamcommunity.com/id/2keyplayers" target="_blank"><i class="link-icon text-red fa fa-link"></i>gamers</a>, <a class="link hover-text-red" href="javascript:showTrophies()"><i class="link-icon text-red fa fa-camera"></i>sport junkies</a> and recently also iOS developers from &quot;the little big country&quot; <a class="link hover-text-red" href="http://slovakia.travel/en" target="_blank"><i class="link-icon text-red fa fa-link"></i>Slovakia</a>. It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. And it did come true, after we released <a class="link hover-text-red" href="javascript:scrollTo('tiliard', -66)"><i class="link-icon text-red fa fa-hashtag"></i>Tiliard</a> back in 2012. We love playing all kinds of games and we know, that if a team wants to win a game, it has to have at least one key player. On our team, we have 2 of them :)
         </p>
         <div id="sport-junkies" class="w3-modal" onclick="hideTrophies()">
           <div class="w3-modal-content w3-animate-zoom">
             <img src="img/sport-junkies.jpg" style="width:100%;margin-bottom:-6px">
           </div>
         </div>
-        <div class="keyplayers w3-row w3-center w3-padding-16 w3-section">
+        <div class="keyplayers w3-row w3-center w3-padding-32 w3-section">
           <div class="keyplayer no1 w3-section">
             <div class="chip">
               <a href="javascript:toggleDetails('keyplayer-1')" class="keyplayer-1 hover-text-red"><img src="img/bilosista.jpg" class="w3-image w3-circle" alt="Key Player 1" />
@@ -136,6 +136,9 @@
             </div>
           </div>
         </div>
+        <p style="padding-bottom:24px">
+          And what do we do besides making great apps &amp; games? We help out other indie developers by beta-testing their apps &amp; games and 'cause we would like to have as many apps &amp; games with Slovak language support as possible, we also translate them (if we get the chance).
+        </p>
       </div>
 
       <!-- Apps & Games -->
@@ -160,15 +163,15 @@
               </div>
               <div class="half-details left w3-col">
                 <p class="key w3-right-align w3-wide">Features</p>
-                <p class="value">+ innovative gameplay</p>
-                <p class="value">+ smooth learning curve</p>
-                <p class="value">+ multiple ways to solve puzzles</p>
-                <p class="value">+ 4 (+1) unique tile halls</p>
-                <p class="value">+ 40 (+10) challenging tables</p>
-                <p class="value">+ exceptional power-ups</p>
-                <p class="value">+ Game Center achievements &amp; leaderboards</p>
-                <p class="value">+ music by Pietro Royalty</p>
-                <p class="value">+ made in Slovakia</p>
+                <p class="value">innovative gameplay</p>
+                <p class="value">smooth learning curve</p>
+                <p class="value">multiple ways to solve puzzles</p>
+                <p class="value">4 (+1) unique tile halls</p>
+                <p class="value">40 (+10) challenging tables</p>
+                <p class="value">exceptional power-ups</p>
+                <p class="value">Game Center achievements &amp; leaderboards</p>
+                <p class="value">music by Pietro Royalty</p>
+                <p class="value">made in Slovakia</p>
               </div>
               <div class="half-details right w3-col">
                 <p class="key w3-right-align w3-wide">Screenshots</p>
@@ -205,44 +208,6 @@
                     <a href="http://forums.toucharcade.com/showthread.php?p=2366108" target="_blank"><img src="img/tiliard/press/toucharcade.png" alt="" /></a>
                   </div>
                 </div>
-                <!--div class="press w3-section">
-                  <div>
-                    <a href="http://www.insidemobileapps.com/2012/10/03/tiliard-brings-innovative-pool-style-puzzling-to-ios/"><p class="w3-center"><img src="img/tiliard/press/inside-mobileapps.png" alt="" style="width:60%; max-width:328px" /></p>
-                		<p class="w3-center">&quot;A real hidden gem of the App Store&quot;</p></a>
-                  </div>
-                  <div>
-                    <a href="http://www.appspy.com/review/6787/tiliard/"><p class="w3-center"><img src="img/tiliard/press/appspy.png" alt="" style="width:50%; max-width:306px" /></p>
-                		<p class="w3-center">&quot;It&apos;s certainly original enough&quot;</p></a>
-                  </div>
-                  <div>
-                    <a href="http://www.iplayapps.de/Tiliard__forderndes_Puzzle_im_Billard-Stil_-4182/"><p class="w3-center"><img src="img/tiliard/press/iplayapps.png" alt="" style="width:50%; max-width:243px" /></p>
-                		<p class="w3-center">&quot;Wer Puzzlespiele fernab des Mainstreams mag, der wird mit Tiliard sicherlich voll auf seine Kosten kommen&quot;</p></a>
-                    </div>
-                    <div>
-                      <a href="http://www.sector.sk/novinka/69475/slovensky-logicky-rychlick-tiliard.htm"><p class="w3-center"><img src="img/tiliard/press/sector.png" alt="" style="width:50%; max-width:588px" /></p>
-                		  <p class="w3-center">&quot;Slovensk&#253; logick&#253; r&#253;chlik&quot;</p></a>
-                    </div>
-                    <div>
-                      <a href="http://www.appliste.cz/tiliard-recenze/"><p class="w3-center"><img src="img/tiliard/press/appliste.png" alt="" style="width:50%; max-width:300px" /></p>
-                		  <p class="w3-center">&quot;Tro&#353;ku logiky, tro&#353;ku kule&#269;n&#237;ku a tro&#353;ku osmibit&#367;&quot;</p></a>
-                    </div>
-                    <div>
-                      <a href="http://www.itouch.cz/poradna/herni-recenze-tiliard-pro-iphone/"><p class="w3-center"><img src="img/tiliard/press/itouch.png" alt="" style="width:50%; max-width:216px" /></p>
-                		  <p class="w3-center">&quot;Koncept Tiliardu je jednoduch&#253; a z&#225;bavn&#253;&quot;</p></a>
-                    </div>
-                    <div>
-                      <a href="http://theappletreereview.blogspot.sk/2012/10/tiliard-by-2-key-players.html"><p class="w3-center"><img src="img/tiliard/press/theappletree.png" alt="" style="width:50%; max-width:350px" /></p>
-                		  <p class="w3-center">&quot;An amazingly unique puzzle game&quot;</p></a>
-                    </div>
-                    <div>
-                      <a href="http://forums.toucharcade.com/showthread.php?p=2366108"><p class="w3-center"><img src="img/tiliard/press/toucharcade.png" alt="" style="width:60%; max-width:822px" /></p>
-                		      <p class="w3-center">&quot;This one is for puzzle lovers&quot;</p></a>
-                    </div>
-                    <div>
-                      <a href="http://www.appliste.cz/hry-zpusobujici-zavislost-25-a-vyvojari-ze-slovenska"><p class="w3-center"><img src="img/tiliard/press/appliste.png" alt="" style="width:50%; max-width:300px" /></p>
-                		  <p class="w3-center">&quot;Hry zp&#367;sobuj&#237;c&#237; z&#225;vislost #25 a v&#253;voj&#225;&#345;i ze Slovenska&quot;</p></a>
-                    </div>
-                </div-->
               </div>
             </div>
           </div>
@@ -319,6 +284,7 @@
       speed: 300,
       slidesToShow: 1,
       arrows: false,
+      dots: true,
       centerMode: true,
       variableWidth: true,
       autoplay: true,
