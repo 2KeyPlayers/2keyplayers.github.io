@@ -79,6 +79,7 @@ h1,h2,h3,h4,h5,h6 {
 .text-green {color: #70d570 !important;}
 .text-orange {color: #f99c24 !important;}
 .text-blue {color: #6ec9d4 !important;}
+.text-testing {color: #379ae9 !important;}
 .hover-text-pink:hover {color: #ff64b2 !important; background-color: inherit !important;}
 .hover-text-red:hover {color: #ff6464 !important; background-color: inherit !important;}
 .hover-text-yellow:hover {color: #efde22 !important; background-color: inherit !important;}
@@ -86,6 +87,7 @@ h1,h2,h3,h4,h5,h6 {
 .hover-text-orange:hover {color: #f99c24 !important; background-color: inherit !important;}
 .hover-text-blue:hover {color: #6ec9d4 !important; background-color: inherit !important;}
 .hover-text-slick:hover {color: #3a99d8 !important;}
+.hover-text-testing:hover {color: #379ae9 !important;}
 
 /* Links */
 a {
@@ -140,7 +142,8 @@ a:focus {
 #intro {
   /*background-image:url("../img/bg.jpg");
   background-size: cover;
-  background-position: center;*/
+  background-position: center;
+  background-repeat: no-repeat;*/
   /*background-attachment: fixed;*/
   position: relative;
   height: 100vh;
@@ -151,15 +154,15 @@ a:focus {
 }
 #intro .logo {
   height: 70vh;
-  background: #f1f1f1; /*#222222;*/
-  border-bottom: 1px solid #757575; /*#8f8f8f;*/
+  background: #f1f1f1;
+  border-bottom: 1px solid #757575;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #intro .motto {
   height: 30vh;
-  padding: 32px;
+  padding: 0 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,13 +244,58 @@ a:focus {
 }
 
 /* Apps & Games */
-#tiliard {
-  margin-top: 16px;
-}
-
-figure {
+.app .image, .game .image, .other .image {
   width: 100%;
   height: 200px;
+}
+
+.image .caption {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  text-align: center;
+  font-size: 26px;
+  width: 100%;
+  height: 100%;
+  display: table;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.image .caption span {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  opacity: 0;
+  color: #000000;
+  text-transform: uppercase;
+}
+.image img {
+  opacity: 1;
+}
+.toggler:hover .caption span, .toggler.active .caption span {
+  opacity: 1;
+}
+.toggler:hover .image img, .toggler.active .image img {
+  opacity: 0;
+}
+.toggler.active:hover .caption span {
+  opacity: 0;
+}
+.toggler.active:hover .image img {
+  opacity: 1;
+
+}
+/*figure *, figure *::before, figure *::after{
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}*/
+
+#game-1 {
+  margin-top: 16px;
+}
+#game-1 .image {
   /*background:
 		linear-gradient(cyan, transparent),
 		linear-gradient(-45deg, magenta, transparent),
@@ -257,66 +305,69 @@ figure {
   background-image: url("../img/tiliard/tiliard-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-figure img {
+@media
+(-webkit-min-device-pixel-ratio: 1.5),
+#game-1 .image img {
   width: 160px;
 }
-figure *, figure *::before, figure *::after{
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+
+#other-1 {
+  margin-top: 20px;
+  padding-right: 10px;
+}
+#other-1 .image {
+  background-image: url("../img/others/beta-testing-bg.jpg");
+  /*background-size: cover;*/
+  background-position: center;
+  background-repeat: repeat-x;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#other-1 .image img {
+  width: 160px;
+}
+#other-1 .caption span {
+  color: #ffffff;
 }
 
-figcaption {
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  text-align: center;
-  font-size: 26px;
-  width: 100%;
-  height: 100%;
-  display: table;
+#other-2 {
+  margin-top: 20px;
+  padding-left: 10px;
 }
-figcaption div {
-  display: table-cell;
-  vertical-align: middle;
+#other-2 .image {
+  background-image: url("../img/others/translations-bg.jpg");
+  background-position: center;
+  background-repeat: repeat-y;
+  overflow: hidden;
   position: relative;
-  top: 20px;
-  opacity: 0;
-  color: #000000;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-figcaption div:after {
-  position: absolute;
-  content: "";
-  left: 0; right: 0;
-  bottom: 40%;
+#other-2 .image img {
+  width: 160px;
+}
+
+.other-item {
+  display: inline-block;
   text-align: center;
-  margin: auto;
-  width: 0%;
-  height: 2px;
-  background: #000000;
+  padding: 10px 20px 0 20px;
 }
-figure img {
-  -moz-transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  opacity: 1;
-}
-figcaption:hover div, .tiliard.active figcaption div {
-  opacity: 1;
-  top: 0;
-}
-figcaption:hover div:after {
-  width: 50%;
-}
-figure:hover img, .tiliard.active figure img {
-  opacity: 0;
+.itunes-icon {
+  display: block;
+  width: 85px;
+  border-radius: 18px;
+  margin: 10px auto 10px auto;
 }
 
 .half-details {
@@ -363,11 +414,15 @@ figure:hover img, .tiliard.active figure img {
 
 /* Players' lounge */
 .map {
-  position: relative;
-  height: 300px;
   background-image: url("../img/map.jpg");
+  height: 300px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.no-touch .map {
   filter: grayscale(100%);
 }
 .map:hover {
@@ -414,7 +469,7 @@ figure:hover img, .tiliard.active figure img {
   -o-animation:      scaleee 2s infinite;
   animation:         scaleee 2s infinite;
 }*/
-.map:hover .marker {
+.map:hover .marker, .touch .map .marker {
   color: #ff6464;
 }
 
@@ -462,9 +517,10 @@ figure:hover img, .tiliard.active figure img {
 }
 
 /* Footer */
-footer hr {
+footer div {
   display: inline-block;
-  margin-bottom: 0;
+  padding-left: 16px;
+  border-top: 1px solid #757575;
 }
 footer .link-icon {
   padding-right: 1px;
@@ -495,10 +551,6 @@ footer .link-icon {
 
 @media (max-width:768px) {
   h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}
-
-  hr {
-    width: 160px;
-  }
 
   #intro .logo {
     height: 60vh;
@@ -555,6 +607,11 @@ footer .link-icon {
 }
 
 @media (max-width:600px) {
+  w3-padding-large {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
   #intro .logo {
     height: 55vh;
   }
@@ -567,6 +624,9 @@ footer .link-icon {
 
   .tiliard {
     background-image: url("../img/tiliard/tiliard-bg-600.jpg");
+  }
+  #other-1, #other-2 {
+    padding: 0;
   }
 
   .social a {

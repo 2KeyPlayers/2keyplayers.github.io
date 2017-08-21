@@ -28,7 +28,7 @@ function showTiliard() {
   if (!tiliard.hasClass("active")) {
     toggleDetails("tiliard");
   }
-  scrollTo('tiliard', -66);
+  scrollTo('game-1', -66);
 }
 
 function toggleDetails(sel) {

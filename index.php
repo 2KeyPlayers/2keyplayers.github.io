@@ -10,7 +10,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="2 Key Players" />
-  <meta property="og:description" content="The key players for the key apps & games." />
+  <meta property="og:description" content="The key players for the key apps &amp; games." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://2keyplayers.com/" />
   <meta property="og:site_name" content="2keyplayers.com" />
@@ -22,22 +22,25 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:description" content="The key players for the key apps & games." />
+  <meta name="twitter:description" content="The key players for the key apps &amp; games." />
   <meta name="twitter:title" content="2 Key Players" />
   <meta name="twitter:site" content="@2KeyPlayers" />
   <meta name="twitter:image" content="https://2keyplayers.com/img/2kp-twitter.jpg" />
   <meta name="twitter:creator" content="@2KeyPlayers" />
 
+  <meta name="author" content="2 Key Players" />
+  <meta name="description" content="2 Key Players - The key players for the key apps &amp; games." />
+  <meta name="keywords" content="2 Key Players, 2keyplayers, 2KP, games, apps, web, iOS, development" />
+
   <!--meta name="copyright" content="(c) Copyright 2011-2017, 2 Key Players" />
   <meta name="classification" content="Personal" />
   <meta name="rating" content="Safe For Kids" />
-  <meta name="keywords" content="2 Key Players, 2keyplayers, 2KP, games, apps, web, iOS, development" />
-  <meta name="description" content="2 Key Players" />
   <meta name="robots" content="index, follow" />
   <meta name="revisit-after" content="1 day" />
   <meta name="doc-type" content="Web Page" />
   <meta name="doc-classs" content="Completed" />
   <meta name="doc-rights" content="Copywritten Work" /-->
+
   <meta name="format-detection" content="telephone=no" />
   <meta http-equiv="x-rim-auto-match" content="none" />
 
@@ -65,6 +68,8 @@
   <link rel="stylesheet" href="css/w3.css" />
   <!--link rel="stylesheet" href="css/animate.css" /-->
   <link rel="stylesheet" href="css/2kp.css" />
+
+  <link rel="preload" href="img/map.jpg" as="image" />
 </head>
 
 <body>
@@ -86,7 +91,8 @@
         <img src="img/2keyplayers.svg" class="w3-image" alt="2 Key Players" />
       </div>
       <div id="motto" class="motto">
-        <h4 class="w3-wide">The <span class="bold">key players</span><br/>for the <span class="bold">key</span> <span class="bold">apps</span> &amp; <span class="bold">games</span>.</h4>
+        <h4 class="w3-wide">The <span class="bold">key players</span><br/>for the <span class="bold">key</span> <span class="bold">apps</span> &amp; <span class="bold">games</span></h4>
+        <!--h4 class="w3-wide">The key players<br/>for the key apps &amp; games</h4-->
       </div>
     </header>
 
@@ -135,9 +141,6 @@
             </div>
           </div>
         </div>
-        <!--p style="padding-bottom:24px">
-          And what do we do besides making great apps &amp; games? We help out other indie developers by beta-testing their apps &amp; games and 'cause we would like to have as many apps &amp; games with Slovak language support as possible, we also translate them (if we get the chance).
-        </p-->
       </div>
 
       <!-- Apps & Games -->
@@ -145,12 +148,13 @@
         <h2 class="text-green underline"><span class="bold">Key</span> apps &amp; games</h2>
 
         <div class="w3-row">
-          <div id="tiliard" class="w3-col">
-            <a href="javascript:toggleDetails('tiliard')" class="tiliard">
-              <figure>
-                <img src="img/tiliard/8tile.png" alt="8 tile" class="tile" />
-                <figcaption><div>Tiliard</div></figcation>
-              </figure>
+
+          <div id="game-1" class="game w3-col">
+            <a href="javascript:toggleDetails('tiliard')" class="tiliard toggler">
+              <div class="image">
+                <img src="img/tiliard/8tile.png" srcset="img/tiliard/8tile.png 2x, img/tiliard/8tile-1x.png 1x" alt="8 tile" />
+                <div class="caption"><span>Tiliard</span></div>
+              </div>
             </a>
             <div class="w3-row w3-hide">
               <div class="details w3-col">
@@ -210,6 +214,91 @@
               </div>
             </div>
           </div>
+
+          <div id="other-1" class="other w3-col m6">
+            <a href="javascript:toggleDetails('beta-testing')" class="beta-testing toggler">
+              <div class="image">
+                <img src="img/others/testflight.svg" alt="Testflight" />
+                <div class="caption"><span>Beta-Testing</span></div>
+              </div>
+            </a>
+            <div class="w3-hide w3-center">
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/chameleon-run/id1084860489?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/chameleon-run.jpg" alt="Chameleon Run" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Chameleon Run
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/monument-valley/id728293409?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/monument-valley.jpg" alt="Monument Valley" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Monument Valley
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/lums/id654746244?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/lums.jpg" alt="Lums" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Lums
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/ball-king/id946496840?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/ball-king.jpg" alt="Ball King" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Ball King
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/perfect-paths/id856029362?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/perfect-paths.jpg" alt="Perfect Paths" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Perfect Paths
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/pivvot/id664416929?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/pivvot.jpg" alt="Pivvot" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Pivvot
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
+                </a>
+              </div>
+              <div class="other-item">
+                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
+                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
+                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="other-2" class="other w3-col m6">
+            <a href="javascript:toggleDetails('translation')" class="translation toggler">
+              <div class="image">
+                <img src="img/others/slovak.svg" alt="Slovak" />
+                <div class="caption"><span>Translations</span></div>
+              </div>
+            </a>
+            <div class="w3-row w3-hide">
+              <div class="details w3-col">
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -258,8 +347,7 @@
 
       <!-- Footer -->
       <footer class="w3-content w3-tiny w3-text-grey w3-right-align">
-        <hr />
-        <div class="w3-section">
+        <div>
           <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank" class="w3-hover-text-green">w3.css</a> &amp; <a href="http://kenwheeler.github.io/slick/" target="_blank" class="hover-text-slick">slick</a></p>
           <p><a href="https://2keyplayers.com/" target="_blank" class="w3-hover-text-light-grey">2 Key Players</a> &copy; 2010-2017</p>
         </div>
@@ -274,6 +362,8 @@
 	<script type="text/javascript" src="js/2kp.js"></script>
 
   <script type="text/javascript">
+  document.documentElement.className += (('ontouchstart' in document.documentElement) ? ' touch' : ' no-touch');
+
   $(document).ready(function() {
 
     adaptNavbar();
@@ -310,17 +400,18 @@
     scrollTo('<?php echo $_GET['nav']; ?>', <?php echo $offset; ?>);
     <?php endif; ?>
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-21427841-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
   });
   </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-21427841-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
 </body>
 </html>
