@@ -125,7 +125,7 @@
                 <p class="key w3-right-align w3-wide">Works</p>
                 <p class="value"><a class="link hover-text-red" href="https://ibm.com" target="_blank"><i class="link-icon text-red fa fa-link"></i>IBM</a></p>
                 <p class="key w3-right-align w3-wide">Loves</p>
-                <p class="value"><a class="link hover-text-red" href="https://twitter.com/biflosistka" target="_blank"><i class="link-icon text-red fa fa-heart"></i>Biflosistka</a>, games, movies, tennis, badminton, pool, basketball, coding</p>
+                <p class="value"><a class="link hover-text-red" href="https://twitter.com/biflosistka" target="_blank"><i class="link-icon text-red fa fa-heart"></i>Biflosistka</a>, games, movies, tennis, badminton, pool, basketball, coding, reading</p>
               </div>
             </div>
           </div>
