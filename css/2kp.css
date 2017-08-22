@@ -47,6 +47,9 @@ figure {
   padding-right: 16px;
   border-bottom: solid 1px #757575;
 }
+.nowrap {
+  white-space: nowrap;
+}
 
 /* Lines */
 hr {

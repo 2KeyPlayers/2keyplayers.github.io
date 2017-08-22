@@ -31,6 +31,13 @@ function showTiliard() {
   scrollTo('game-1', -66);
 }
 
+function showDetails(cls, id, offset) {
+  var tiliard = $("." + tiliard);
+  if (!tiliard.hasClass("active")) {
+    toggleDetails(cls);
+  }
+  scrollTo(id, offset);
+}
 function toggleDetails(sel) {
   var el = $("." + sel);
   el.toggleClass("active");

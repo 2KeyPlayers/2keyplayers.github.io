@@ -104,7 +104,10 @@
         <h2 class="text-red underline"><span class="bold">2</span> brothers</h2>
 
         <p>
-          We are 2 brothers, <a class="link hover-text-red" href="http://steamcommunity.com/id/2keyplayers" target="_blank"><i class="link-icon text-red fa fa-link"></i>gamers</a>, <a class="link hover-text-red" href="javascript:showTrophies()"><i class="link-icon text-red fa fa-camera"></i>sport junkies</a> and recently also iOS developers from &quot;the little big country&quot; <a class="link hover-text-red" href="http://slovakia.travel/en" target="_blank"><i class="link-icon text-red fa fa-link"></i>Slovakia</a>. It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. And it did come true when we released <a class="link hover-text-red" href="javascript:showTiliard()"><i class="link-icon text-red fa fa-hashtag"></i>Tiliard</a> back in 2012. We love playing all kinds of games and we know, that if a team wants to win a game, it has to have at least one key player. On our team, we have 2 of them :)
+          We are 2 brothers, <a class="link hover-text-red" href="http://steamcommunity.com/id/2keyplayers" target="_blank"><i class="link-icon text-red fa fa-link"></i>gamers</a>, <a class="link hover-text-red" href="javascript:showTrophies()"><i class="link-icon text-red fa fa-camera"></i>sport junkies</a> and recently also iOS developers from &quot;the little big country&quot; <a class="link hover-text-red" href="http://slovakia.travel/en" target="_blank"><i class="link-icon text-red fa fa-link"></i>Slovakia</a>. It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. And it did come true when we released <a class="link hover-text-red" href="javascript:showDetails('tiliard', 'game-1', -66)"><i class="link-icon text-red fa fa-hashtag"></i>Tiliard</a> back in 2012. Since then, we also try to help out other indie developers by <a class="link hover-text-red" href="javascript:showDetails('beta-testing', 'other-1', -66)"><i class="link-icon text-red fa fa-hashtag"></i>beta-testing</a> their apps &amp; games, as well as making them more accessible in our country by <a class="link hover-text-red" href="javascript:showDetails('translations', 'other-2', -66)"><i class="link-icon text-red fa fa-hashtag"></i>translating</a> them to Slovak language.
+        </p>
+        <p>
+          We love playing all kinds of games and we know, that if a team wants to win a game, it has to have at least one key player. On our team, we have 2 of them :)
         </p>
         <div id="sport-junkies" class="w3-modal" onclick="hideTrophies()">
           <div class="w3-modal-content w3-animate-zoom">
@@ -218,7 +221,7 @@
           <div id="other-1" class="other w3-col m6">
             <a href="javascript:toggleDetails('beta-testing')" class="beta-testing toggler">
               <div class="image">
-                <img src="img/others/testflight-w.svg" alt="Testflight" />
+                <img src="img/others/testflight.svg" alt="Testflight" />
                 <div class="caption"><span>Beta-Testing</span></div>
               </div>
             </a>
@@ -273,6 +276,10 @@
                 <!-- by tinyBuild LLC -->
               </a>
               <div class="other-item">
+                <img src="img/others/where-to-jump.jpg" alt="Where To Jump?" class="itunes-icon" />
+                <i class="w3-text-grey fa fa-remove"></i> Where To Jump?
+              </div>
+              <div class="other-item">
                 <img src="img/others/kindo.jpg" alt="Kindo" class="itunes-icon" />
                 <i class="w3-text-grey fa fa-remove"></i> Kindo
               </div>
@@ -280,9 +287,9 @@
           </div>
 
           <div id="other-2" class="other w3-col m6">
-            <a href="javascript:toggleDetails('translation')" class="translation toggler">
+            <a href="javascript:toggleDetails('translations')" class="translations toggler">
               <div class="image">
-                <img src="img/others/slovak-w.svg" alt="Slovak" />
+                <img src="img/others/slovak.svg" alt="Slovak" />
                 <div class="caption"><span>Slovak<br/>Translations</span></div>
               </div>
             </a>
