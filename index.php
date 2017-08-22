@@ -157,7 +157,7 @@
                 </p>
                 <p class="key w3-right-align w3-wide">Top 3 Movies</p>
                 <p class="value">
-                  <a class="link hover-text-red" href="http://www.imdb.com/title/tt0133093/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Matrix</a><br/>
+                  <a class="link hover-text-red" href="http://www.imdb.com/title/tt0133093/" target="_blank"><i class="link-icon text-red fa fa-link"></i>The Matrix</a><br/>
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0139654/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Training Day</a><br/>
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0108281/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Tai-Chi Master</a>
                 </p>
