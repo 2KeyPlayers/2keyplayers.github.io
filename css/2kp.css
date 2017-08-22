@@ -79,7 +79,6 @@ h1,h2,h3,h4,h5,h6 {
 .text-green {color: #70d570 !important;}
 .text-orange {color: #f99c24 !important;}
 .text-blue {color: #6ec9d4 !important;}
-.text-testing {color: #379ae9 !important;}
 .hover-text-pink:hover {color: #ff64b2 !important; background-color: inherit !important;}
 .hover-text-red:hover {color: #ff6464 !important; background-color: inherit !important;}
 .hover-text-yellow:hover {color: #efde22 !important; background-color: inherit !important;}
@@ -88,6 +87,7 @@ h1,h2,h3,h4,h5,h6 {
 .hover-text-blue:hover {color: #6ec9d4 !important; background-color: inherit !important;}
 .hover-text-slick:hover {color: #3a99d8 !important;}
 .hover-text-testing:hover {color: #379ae9 !important;}
+.hover-text-slovak:hover {color: #ff6464 !important;}
 
 /* Links */
 a {
@@ -267,7 +267,7 @@ a:focus {
   vertical-align: middle;
   position: relative;
   opacity: 0;
-  color: #000000;
+  color: #f1f1f1;
   text-transform: uppercase;
 }
 .image img {
@@ -324,8 +324,8 @@ a:focus {
 }
 #other-1 .image {
   background-image: url("../img/others/beta-testing-bg.jpg");
-  /*background-size: cover;*/
   background-position: center;
+  background-size: contain;
   background-repeat: repeat-x;
   overflow: hidden;
   position: relative;
@@ -334,11 +334,11 @@ a:focus {
   align-items: center;
 }
 #other-1 .image img {
-  width: 160px;
+  width: 100px;
 }
-#other-1 .caption span {
+/*#other-1 .caption span {
   color: #ffffff;
-}
+}*/
 
 #other-2 {
   margin-top: 20px;
@@ -347,7 +347,8 @@ a:focus {
 #other-2 .image {
   background-image: url("../img/others/translations-bg.jpg");
   background-position: center;
-  background-repeat: repeat-y;
+  background-size: contain;
+  background-repeat: repeat-x;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -355,19 +356,27 @@ a:focus {
   align-items: center;
 }
 #other-2 .image img {
-  width: 160px;
+  width: 80px;
 }
+/*#other-2 .caption span {
+  color: #ffffff;
+}*/
 
+.other-list {
+  padding-top: 10px;
+}
 .other-item {
+  width: 120px;
   display: inline-block;
   text-align: center;
-  padding: 10px 20px 0 20px;
+  vertical-align: top;
+  margin: 20px 5px 0 5px;
 }
 .itunes-icon {
   display: block;
   width: 85px;
   border-radius: 18px;
-  margin: 10px auto 10px auto;
+  margin: 0 auto 10px auto;
 }
 
 .half-details {
@@ -394,7 +403,7 @@ a:focus {
 }
 
 .press {
-  margin-bottom: 32px !important;
+  margin-bottom: 64px !important;
 }
 .press .slick-slide {
   margin: 0 32px;

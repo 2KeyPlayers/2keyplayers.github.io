@@ -218,70 +218,63 @@
           <div id="other-1" class="other w3-col m6">
             <a href="javascript:toggleDetails('beta-testing')" class="beta-testing toggler">
               <div class="image">
-                <img src="img/others/testflight.svg" alt="Testflight" />
+                <img src="img/others/testflight-w.svg" alt="Testflight" />
                 <div class="caption"><span>Beta-Testing</span></div>
               </div>
             </a>
-            <div class="w3-hide w3-center">
+            <div class="other-list w3-hide w3-center">
+              <a href="https://itunes.apple.com/us/app/chameleon-run/id1084860489?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/chameleon-run.jpg" alt="Chameleon Run" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Chameleon Run
+              </a>
+              <a href="https://itunes.apple.com/us/app/monument-valley/id728293409?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/monument-valley.jpg" alt="Monument Valley" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Monument Valley
+              </a>
+              <a href="https://itunes.apple.com/us/app/samorost-3/id1121782467?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/samorost-3.jpg" alt="Samorost 3" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Samorost 3
+              </a>
+              <a href="https://itunes.apple.com/us/app/pivvot/id664416929?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/pivvot.jpg" alt="Pivvot" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Pivvot
+              </a>
+              <a href="https://itunes.apple.com/us/app/lums/id654746244?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/lums.jpg" alt="Lums" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Lums
+              </a>
+              <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
+              </a>
+              <a href="https://itunes.apple.com/us/app/ball-king/id946496840?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/ball-king.jpg" alt="Ball King" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Ball King
+              </a>
+              <a href="https://itunes.apple.com/us/app/perfect-paths/id856029362?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/perfect-paths.jpg" alt="Perfect Paths" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Perfect Paths
+              </a>
+              <a href="https://itunes.apple.com/us/app/brick-roll/id652025247?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/brick-roll.jpg" alt="Brick Roll" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Brick Roll
+              </a>
+              <a href="https://itunes.apple.com/us/app/dunkers/id1110480334?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/dunkers.jpg" alt="Dunkers" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Dunkers
+              </a>
+              <a href="https://itunes.apple.com/us/app/cube-koala/id1126325399?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/cube-koala.jpg" alt="Cube Koala" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Cube Koala
+              </a>
+              <a href="https://itunes.apple.com/us/app/dungelot-shattered-lands/id1034658841?mt=8" target="_blank" class="other-item hover-text-testing">
+                <img src="img/others/dungelot.jpg" alt="Dungelot: Shattered Lands" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Dungelot: Shattered Lands
+                <!-- by tinyBuild LLC -->
+              </a>
               <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/chameleon-run/id1084860489?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/chameleon-run.jpg" alt="Chameleon Run" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Chameleon Run
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/monument-valley/id728293409?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/monument-valley.jpg" alt="Monument Valley" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Monument Valley
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/lums/id654746244?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/lums.jpg" alt="Lums" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Lums
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/ball-king/id946496840?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/ball-king.jpg" alt="Ball King" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Ball King
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/perfect-paths/id856029362?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/perfect-paths.jpg" alt="Perfect Paths" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Perfect Paths
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/pivvot/id664416929?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/pivvot.jpg" alt="Pivvot" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Pivvot
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
-                </a>
-              </div>
-              <div class="other-item">
-                <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="hover-text-testing">
-                  <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
-                  <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
-                </a>
+                <img src="img/others/kindo.jpg" alt="Kindo" class="itunes-icon" />
+                <i class="w3-text-grey fa fa-remove"></i> Kindo
               </div>
             </div>
           </div>
@@ -289,12 +282,22 @@
           <div id="other-2" class="other w3-col m6">
             <a href="javascript:toggleDetails('translation')" class="translation toggler">
               <div class="image">
-                <img src="img/others/slovak.svg" alt="Slovak" />
-                <div class="caption"><span>Translations</span></div>
+                <img src="img/others/slovak-w.svg" alt="Slovak" />
+                <div class="caption"><span>Slovak<br/>Translations</span></div>
               </div>
             </a>
-            <div class="w3-row w3-hide">
-              <div class="details w3-col">
+            <div class="other-list w3-center w3-hide">
+              <a href="https://itunes.apple.com/us/app/canabalt/id333180061?mt=8" target="_blank" class="other-item hover-text-slovak">
+                <img src="img/others/canabalt.jpg" alt="Canabalt" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Canabalt
+              </a>
+              <a href="https://itunes.apple.com/us/app/ball-king/id946496840?mt=8" target="_blank" class="other-item hover-text-slovak">
+                <img src="img/others/ball-king.jpg" alt="Ball King" class="itunes-icon" />
+                <!--i class="link-icon text-testing fa fa-link"></i-->Ball King
+              </a>
+              <div class="other-item">
+                <img src="img/others/kindo.jpg" alt="Kindo" class="itunes-icon" />
+                <i class="w3-text-grey fa fa-remove"></i> Kindo
               </div>
             </div>
           </div>
@@ -311,7 +314,7 @@
             <a href="https://www.google.sk/maps/place/Ko%C5%A1ice/@48.6973299,21.0991096,11z/data=!3m1!4b1!4m5!3m4!1s0x473ee01b67c6957b:0x400f7d1c6978bd0!8m2!3d48.7163857!4d21.2610746" target="_blank" class="location"><span color="text-red">Košice</span><i class="fa fa-map-marker"></i></a>
           </div>
           <div class="social">
-            <a href="javascript:sendMail('hello')" title="E-mail" class="mail w3-hover-text-light-grey">
+            <a href="javascript:sendMail('contact')" title="E-mail" class="mail w3-hover-text-light-grey">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
