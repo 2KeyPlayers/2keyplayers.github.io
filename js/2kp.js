@@ -23,17 +23,10 @@ function showTrophies() {
 function hideTrophies() {
   document.getElementById("sport-junkies").style.display = "none";
 }
-function showTiliard() {
-  var tiliard = $(".tiliard");
-  if (!tiliard.hasClass("active")) {
-    toggleDetails("tiliard");
-  }
-  scrollTo('game-1', -66);
-}
 
 function showDetails(cls, id, offset) {
-  var tiliard = $("." + tiliard);
-  if (!tiliard.hasClass("active")) {
+  var toggler = $("." + cls);
+  if (!toggler.hasClass("active")) {
     toggleDetails(cls);
   }
   scrollTo(id, offset);

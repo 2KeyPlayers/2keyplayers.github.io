@@ -1,14 +1,18 @@
 /* ----- 2 Key Players ----- */
 
 /* Custom w3- classes */
-.w3-container,.w3-panel{padding:0 16px}
-.w3-padding-top-32{padding-top: 32px !important;}
-.w3-padding-bottom-64{padding-bottom: 64px !important;}
+.w3-container,.w3-panel{padding:0 16px;}
+.w3-padding-top-32{padding-top:32px !important;}
+.w3-padding-bottom-64{padding-bottom:64px !important;}
+.w3-ligh-grey{background-color:#f9f9f9 !important;}
+.w3-hover-ligh-grey{background-color:#f9f9f9 !important;}
+.w3-text-ligh-grey{color:#f9f9f9 !important;}
+.w3-hover-text-ligh-grey{color:#f9f9f9 !important;}
 
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 body {
-  color: #f1f1f1;
+  color: #f9f9f9;
   background-color: #000000;
 }
 
@@ -60,7 +64,7 @@ hr {
 
 /* Headers */
 h1,h2,h3,h4,h5,h6 {
-  color: #f1f1f1;
+  color: #f9f9f9;
 }
 
 /* Colors */
@@ -124,7 +128,7 @@ a:focus {
 /* Navbar */
 #navbar {
   /*color: #000000;
-  background: #f1f1f1;*/
+  background: #f9f9f9;*/
   color: #757575;
   background: #000000;
   border-bottom: 1px solid #757575;
@@ -157,7 +161,7 @@ a:focus {
 }
 #intro .logo {
   height: 70vh;
-  background: #f1f1f1;
+  background: #f9f9f9;
   border-bottom: 1px solid #757575;
   display: flex;
   justify-content: center;
@@ -210,7 +214,7 @@ a:focus {
 }
 .value {
   color: #000000;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   border-radius: 14px;
   padding-left: 14px;
   padding-right: 14px;
@@ -236,7 +240,7 @@ a:focus {
   border-radius: 50%;
 }
 .chip > a {
-  color: #f1f1f1;
+  color: #f9f9f9;
 }
 .chip > a.active {
   color: #ff6464;
@@ -270,7 +274,7 @@ a:focus {
   vertical-align: middle;
   position: relative;
   opacity: 0;
-  color: #f1f1f1;
+  color: #f9f9f9;
   text-transform: uppercase;
 }
 .image img {
@@ -315,10 +319,8 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
-@media
-(-webkit-min-device-pixel-ratio: 1.5),
-#game-1 .image img {
-  width: 160px;
+#game-1 .caption span {
+  color: #000000;
 }
 
 #other-1 {
@@ -339,9 +341,6 @@ a:focus {
 #other-1 .image img {
   width: 100px;
 }
-/*#other-1 .caption span {
-  color: #ffffff;
-}*/
 
 #other-2 {
   margin-top: 20px;
@@ -361,9 +360,6 @@ a:focus {
 #other-2 .image img {
   width: 80px;
 }
-/*#other-2 .caption span {
-  color: #ffffff;
-}*/
 
 .other-list {
   padding-top: 10px;
@@ -501,7 +497,7 @@ a:focus {
   color: #000000;
 }
 .social a span .fa-inverse {
-  color: #f1f1f1;
+  color: #f9f9f9;
 }
 .location:hover span {
   color: #ff6464 !important;
@@ -510,7 +506,7 @@ a:focus {
   font-size: 18px;
 }
 .mail:hover span {
-  color: #6ec9d4 !important;
+  color: #ff6464 !important;
 }
 .twitter:hover span {
   color: #1da1f2 !important;
@@ -562,6 +558,11 @@ footer .link-icon {
 }
 
 @media (max-width:768px) {
+  .w3-padding-large {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
   h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}
 
   #intro .logo {
@@ -619,7 +620,7 @@ footer .link-icon {
 }
 
 @media (max-width:600px) {
-  w3-padding-large {
+  .w3-padding-large {
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
