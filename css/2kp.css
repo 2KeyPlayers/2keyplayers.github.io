@@ -16,9 +16,34 @@ body {
   background-color: #000000;
 }
 
-figure {
-  margin: 0;
-}
+/* Colors */
+.pink {background-color: #ff64b2 !important;}
+.red {background-color: #ff6464 !important;}
+.yellow {background-color: #efde22 !important;}
+.green {background-color: #70d570 !important;}
+.orange {background-color: #f99c24 !important;}
+.blue {background-color: #6ec9d4 !important;}
+.hover-pink:hover {background-color: #ff64b2 !important;}
+.hover-red:hover {background-color: #ff6464 !important;}
+.hover-yellow:hover {background-color: #efde22 !important;}
+.hover-green:hover {background-color: #70d570 !important;}
+.hover-orange:hover {background-color: #f99c24 !important;}
+.hover-blue:hover {background-color: #6ec9d4 !important;}
+.text-pink {color: #ff64b2 !important;}
+.text-red {color: #ff6464 !important;}
+.text-yellow {color: #efde22 !important;}
+.text-green {color: #70d570 !important;}
+.text-orange {color: #f99c24 !important;}
+.text-blue {color: #6ec9d4 !important;}
+.hover-text-pink:hover {color: #ff64b2 !important; background-color: inherit !important;}
+.hover-text-red:hover {color: #ff6464 !important; background-color: inherit !important;}
+.hover-text-yellow:hover {color: #efde22 !important; background-color: inherit !important;}
+.hover-text-green:hover {color: #70d570 !important; background-color: inherit !important;}
+.hover-text-orange:hover {color: #f99c24 !important; background-color: inherit !important;}
+.hover-text-blue:hover {color: #6ec9d4 !important; background-color: inherit !important;}
+.hover-text-slick:hover {color: #3a99d8 !important;}
+.hover-text-testing:hover {color: #379ae9 !important;}
+.hover-text-slovak:hover {color: #ff6464 !important;}
 
 /* Slick */
 .slick-slide {
@@ -55,46 +80,10 @@ figure {
   white-space: nowrap;
 }
 
-/* Lines */
-hr {
-  display: inline-block;
-  border-top: solid 1px #757575;
-  width: 200px;
-}
-
 /* Headers */
 h1,h2,h3,h4,h5,h6 {
   color: #f9f9f9;
 }
-
-/* Colors */
-.pink {background-color: #ff64b2 !important;}
-.red {background-color: #ff6464 !important;}
-.yellow {background-color: #efde22 !important;}
-.green {background-color: #70d570 !important;}
-.orange {background-color: #f99c24 !important;}
-.blue {background-color: #6ec9d4 !important;}
-.hover-pink:hover {background-color: #ff64b2 !important;}
-.hover-red:hover {background-color: #ff6464 !important;}
-.hover-yellow:hover {background-color: #efde22 !important;}
-.hover-green:hover {background-color: #70d570 !important;}
-.hover-orange:hover {background-color: #f99c24 !important;}
-.hover-blue:hover {background-color: #6ec9d4 !important;}
-.text-pink {color: #ff64b2 !important;}
-.text-red {color: #ff6464 !important;}
-.text-yellow {color: #efde22 !important;}
-.text-green {color: #70d570 !important;}
-.text-orange {color: #f99c24 !important;}
-.text-blue {color: #6ec9d4 !important;}
-.hover-text-pink:hover {color: #ff64b2 !important; background-color: inherit !important;}
-.hover-text-red:hover {color: #ff6464 !important; background-color: inherit !important;}
-.hover-text-yellow:hover {color: #efde22 !important; background-color: inherit !important;}
-.hover-text-green:hover {color: #70d570 !important; background-color: inherit !important;}
-.hover-text-orange:hover {color: #f99c24 !important; background-color: inherit !important;}
-.hover-text-blue:hover {color: #6ec9d4 !important; background-color: inherit !important;}
-.hover-text-slick:hover {color: #3a99d8 !important;}
-.hover-text-testing:hover {color: #379ae9 !important;}
-.hover-text-slovak:hover {color: #ff6464 !important;}
 
 /* Links */
 a {
@@ -127,8 +116,6 @@ a:focus {
 
 /* Navbar */
 #navbar {
-  /*color: #000000;
-  background: #f9f9f9;*/
   color: #757575;
   background: #000000;
   border-bottom: 1px solid #757575;
@@ -293,22 +280,11 @@ a:focus {
   opacity: 1;
 
 }
-/*figure *, figure *::before, figure *::after{
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}*/
 
 #game-1 {
   margin-top: 16px;
 }
 #game-1 .image {
-  /*background:
-		linear-gradient(cyan, transparent),
-		linear-gradient(-45deg, magenta, transparent),
-		linear-gradient(45deg, yellow, transparent);
-	background-blend-mode: multiply;*/
-  /*background-attachment: fixed;*/
   background-image: url("../img/tiliard/tiliard-bg.jpg");
   background-size: 100% 100%;
   background-position: center;
@@ -363,6 +339,10 @@ a:focus {
 
 .other-list {
   padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .other-item {
   width: 120px;
@@ -454,29 +434,6 @@ a:focus {
 .marker a:hover span {
   opacity: 1;
 }
-/*@-webkit-keyframes NAME-YOUR-ANIMATION {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes NAME-YOUR-ANIMATION {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes NAME-YOUR-ANIMATION {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes scaleee {
-  0%   { scale: 1 }
-  100% { scale: 1.3; }
-}
-.marker i:hover {
-  transform: scale(1.5);
-  -webkit-animation: scaleee 2s infinite;
-  -moz-animation:    scaleee 2s infinite;
-  -o-animation:      scaleee 2s infinite;
-  animation:         scaleee 2s infinite;
-}*/
 .map:hover .marker, .touch .map .marker {
   color: #ff6464;
 }
@@ -640,6 +597,9 @@ footer .link-icon {
   }
   #other-1, #other-2 {
     padding: 0;
+  }
+  #other-1 .other-list {
+    padding-bottom: 32px;
   }
 
   .social a {
