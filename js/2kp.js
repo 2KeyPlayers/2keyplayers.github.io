@@ -48,7 +48,7 @@ function toggleDetails(sel) {
 }
 
 function sendMail(to) {
-  document.location = "mailto:" + to + "@2kayplayers.com";
+  document.location = "mailto:" + to + "@2keyplayers.com";
 }
 
 $(function() {
