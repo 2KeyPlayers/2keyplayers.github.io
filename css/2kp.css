@@ -349,7 +349,7 @@ a:focus {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  margin: 20px 5px 0 5px;
+  margin-top: 20px;
 }
 .itunes-icon {
   display: block;
