@@ -10,26 +10,26 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="2 Key Players" />
-  <meta property="og:description" content="The key players for the key apps &amp; games." />
+  <meta property="og:description" content="The key players for the key apps &amp; games" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://2keyplayers.com/" />
   <meta property="og:site_name" content="2keyplayers.com" />
-  <meta property="og:image" content="https://2keyplayers.com/img/2kp.gif" />
-  <meta property="og:image:type" content="image/gif" />
+  <meta property="og:image" content="https://2keyplayers.com/img/2kp-fb.jpg" /> <!-- 1200x1200 or below 400x400 -->
+  <meta property="og:image:type" content="image/jpg" />
   <meta property="og:image:width" content="300" />
   <meta property="og:image:height" content="300" />
-  <!--meta property="fb:app_id" content=""/-->
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:description" content="The key players for the key apps &amp; games." />
   <meta name="twitter:title" content="2 Key Players" />
   <meta name="twitter:site" content="@2KeyPlayers" />
-  <meta name="twitter:image" content="https://2keyplayers.com/img/2kp-twitter.jpg" />
+  <meta name="twitter:description" content="The key players for the key apps &amp; games" />
+  <meta name="twitter:image" content="https://2keyplayers.com/img/2kp-twitter.jpg" /> <!-- https://dev.twitter.com/cards/types/summary-large-image -->
+  <meta name="twitter:image:alt" content="Logo" />
   <meta name="twitter:creator" content="@2KeyPlayers" />
 
   <meta name="author" content="2 Key Players" />
-  <meta name="description" content="2 Key Players - The key players for the key apps &amp; games." />
+  <meta name="description" content="2 Key Players - The key players for the key apps &amp; games" />
   <meta name="keywords" content="2 Key Players, 2keyplayers, 2KP, games, apps, web, iOS, development" />
 
   <!--meta name="copyright" content="(c) Copyright 2011-2017, 2 Key Players" />
@@ -49,7 +49,7 @@
 
   <link rel="canonical" href="http://2keyplayers.com/" />
 
-  <link rel="mask-icon" sizes="any" href="/img/2kp-icon.svg" color="#000000" />
+  <link rel="mask-icon" sizes="any" href="img/2kp-icon.svg" color="#000000" />
   <!--link rel="mask-icon" sizes="any" href="https://abs.twimg.com/a/1501733076/icons/favicon.svg" color="#1da1f2"-->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <!--link rel="shortcut icon" href="//abs.twimg.com/favicons/favicon.ico" type="image/x-icon"-->
@@ -252,52 +252,51 @@
             <div class="other-list w3-hide w3-center">
               <a href="https://itunes.apple.com/us/app/chameleon-run/id1084860489?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/chameleon-run.jpg" alt="Chameleon Run" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Chameleon Run
+                Chameleon Run
               </a>
               <a href="https://itunes.apple.com/us/app/monument-valley/id728293409?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/monument-valley.jpg" alt="Monument Valley" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Monument Valley
+                Monument Valley
               </a>
               <a href="https://itunes.apple.com/us/app/samorost-3/id1121782467?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/samorost-3.jpg" alt="Samorost 3" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Samorost 3
+                Samorost 3
               </a>
               <a href="https://itunes.apple.com/us/app/pivvot/id664416929?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/pivvot.jpg" alt="Pivvot" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Pivvot
+                Pivvot
               </a>
               <a href="https://itunes.apple.com/us/app/lums/id654746244?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/lums.jpg" alt="Lums" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Lums
+                Lums
               </a>
               <a href="https://itunes.apple.com/us/app/trigonarium/id973810507?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/trigonarium.jpg" alt="Trigonarium" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Trigonarium
+                Trigonarium
               </a>
               <a href="https://itunes.apple.com/us/app/ball-king/id946496840?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/ball-king.jpg" alt="Ball King" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Ball King
+                Ball King
               </a>
               <a href="https://itunes.apple.com/us/app/perfect-paths/id856029362?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/perfect-paths.jpg" alt="Perfect Paths" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Perfect Paths
+                Perfect Paths
               </a>
               <a href="https://itunes.apple.com/us/app/brick-roll/id652025247?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/brick-roll.jpg" alt="Brick Roll" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Brick Roll
+                Brick Roll
               </a>
               <a href="https://itunes.apple.com/us/app/dunkers/id1110480334?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/dunkers.jpg" alt="Dunkers" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Dunkers
+                Dunkers
               </a>
               <a href="https://itunes.apple.com/us/app/cube-koala/id1126325399?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/cube-koala.jpg" alt="Cube Koala" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Cube Koala
+                Cube Koala
               </a>
               <a href="https://itunes.apple.com/us/app/dungelot-shattered-lands/id1034658841?mt=8" target="_blank" class="other-item hover-text-testing">
                 <img src="img/others/dungelot.jpg" alt="Dungelot: Shattered Lands" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Dungelot: Shattered Lands
-                <!-- by tinyBuild LLC -->
+                Dungelot: Shattered Lands
               </a>
               <div class="other-item">
                 <img src="img/others/where-to-jump.jpg" alt="Where To Jump?" class="itunes-icon" />
@@ -320,11 +319,11 @@
             <div class="other-list w3-center w3-hide">
               <a href="https://itunes.apple.com/us/app/canabalt/id333180061?mt=8" target="_blank" class="other-item hover-text-slovak">
                 <img src="img/others/canabalt.jpg" alt="Canabalt" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Canabalt
+                Canabalt
               </a>
               <a href="https://itunes.apple.com/us/app/ball-king/id946496840?mt=8" target="_blank" class="other-item hover-text-slovak">
                 <img src="img/others/ball-king.jpg" alt="Ball King" class="itunes-icon" />
-                <!--i class="link-icon text-testing fa fa-link"></i-->Ball King
+                Ball King
               </a>
               <div class="other-item">
                 <img src="img/others/kindo.jpg" alt="Kindo" class="itunes-icon" />
