@@ -123,18 +123,18 @@
                 <p class="value"><a class="link hover-text-red" href="https://ibm.com" target="_blank"><i class="link-icon text-red fa fa-link"></i>IBM</a></p>
                 <p class="key w3-right-align w3-wide">Loves</p>
                 <p class="value"><a class="link hover-text-red" href="https://twitter.com/biflosistka" target="_blank"><i class="link-icon text-red fa fa-heart"></i>Biflosistka</a>, games, movies, tennis, badminton, pool, basketball, coding</p>
-                <p class="key w3-right-align w3-wide">Top 3 Games</p>
+                <p class="key w3-right-align w3-wide">Top 3</p>
                 <p class="value">
                   <a class="link hover-text-red" href="https://itunes.apple.com/us/app/inks/id1081847121?mt=8" target="_blank"><i class="link-icon text-red fa fa-link"></i>INKS.</a> (iOS)<br/>
                   <a class="link hover-text-red" href="https://en.wikipedia.org/wiki/Legacy_of_Kain:_Soul_Reaver" target="_blank"><i class="link-icon text-red fa fa-link"></i>Legacy of Kain: Soul Reaver</a> (PC)<br/>
                   <a class="link hover-text-red" href="https://www.playstation.com/en-us/games/uncharted-2-among-thieves-ps3/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Uncharted 2: Among Thieves</a> (PS3)
                 </p>
-                <p class="key w3-right-align w3-wide">Top 3 Movies</p>
+                <!--p class="key w3-right-align w3-wide">Top 3 Movies</p>
                 <p class="value">
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0172495/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Gladiator</a><br/>
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0133093/" target="_blank"><i class="link-icon text-red fa fa-link"></i>The Matrix</a><br/>
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0091431/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Armour Of God</a>
-                </p>
+                </p-->
               </div>
             </div>
           </div>
@@ -149,18 +149,18 @@
                 <p class="value"><a class="link hover-text-red" href="https://www.healthcare.siemens.com" target="_blank"><i class="link-icon text-red fa fa-link"></i>SIEMENS Healthineers</a></p>
                 <p class="key w3-right-align w3-wide">Loves</p>
                 <p class="value"><a class="link hover-text-red" href="https://twitter.com/neecusha" target="_blank"><i class="link-icon text-red fa fa-heart"></i>Neecusha</a>, games, movies, basketball, biking, badminton, pool, game design</p>
-                <p class="key w3-right-align w3-wide">Top 3 Games</p>
+                <p class="key w3-right-align w3-wide">Top 3</p>
                 <p class="value">
                   <a class="link hover-text-red" href="https://itunes.apple.com/us/app/duet-game/id634235735?mt=8" target="_blank"><i class="link-icon text-red fa fa-link"></i>Duet</a> (iOS)<br/>
                   <a class="link hover-text-red" href="https://en.wikipedia.org/wiki/NHL_95" target="_blank"><i class="link-icon text-red fa fa-link"></i>NHL 95</a> (PC)<br/>
                   <a class="link hover-text-red" href="https://www.playstation.com/en-us/games/journey-ps3/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Journey</a> (PS3)
                 </p>
-                <p class="key w3-right-align w3-wide">Top 3 Movies</p>
+                <!--p class="key w3-right-align w3-wide">Top 3 Movies</p>
                 <p class="value">
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0133093/" target="_blank"><i class="link-icon text-red fa fa-link"></i>The Matrix</a><br/>
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0139654/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Training Day</a><br/>
                   <a class="link hover-text-red" href="http://www.imdb.com/title/tt0108281/" target="_blank"><i class="link-icon text-red fa fa-link"></i>Tai-Chi Master</a>
-                </p>
+                </p-->
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@
               <div class="half-details right w3-col">
                 <p class="key w3-right-align w3-wide">Screenshots</p>
                 <div class="screenshots w3-section">
-                  <div style="width:100%"><img src="img/tiliard/screens/screen-1.jpg" alt="Screenshot 1" /></div>
+                  <div><img src="img/tiliard/screens/screen-1.jpg" alt="Screenshot 1" /></div>
                   <div><img src="img/tiliard/screens/screen-2.jpg" alt="Screenshot 2" /></div>
                   <div><img src="img/tiliard/screens/screen-3.jpg" alt="Screenshot 3" /></div>
                   <div><img src="img/tiliard/screens/screen-4.jpg" alt="Screenshot 4" /></div>
