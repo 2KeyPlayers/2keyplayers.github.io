@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" /> <!-- maximum-scale=1.0, minimum-scale=1.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> <!-- maximum-scale=1.0, minimum-scale=1.0, user-scalable=no -->
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
   <title>2 Key Players</title>
@@ -166,7 +166,7 @@
           </div>
         </div>
         <p>
-          It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. And it did come true when we released <a class="link hover-text-red" href="javascript:showDetails('tiliard', 'game-1', -66)"><i class="link-icon text-red fa fa-hashtag"></i>Tiliard</a> back in 2012. Since then, we&apos;re also trying to help out other indie developers by <a class="link hover-text-red" href="javascript:showDetails('beta-testing', 'other-1', -66)"><i class="link-icon text-red fa fa-hashtag"></i>beta-testing</a> their apps &amp; games, as well as making them more accessible in our country by <a class="link hover-text-red" href="javascript:showDetails('translations', 'other-2', -66)"><i class="link-icon text-red fa fa-hashtag"></i>translating</a> them to Slovak language. Nowadays, we&apos;re in search for some free time to continue our work on App no. 1 and Game  no. 2.
+          It has always been our dream to develop and release at least one game and we were <!--a class="link hover-text-red" href="/blog" target="_blank"><i class="link-icon text-red fa fa-link"></i>trying</a--> trying hard to make this dream come true. And it did when we released <a class="link hover-text-red" href="javascript:showDetails('tiliard', 'game-1', -66)"><i class="link-icon text-red fa fa-hashtag"></i>Tiliard</a> back in 2012. Since then, we&apos;re also trying to help out other indie developers by <a class="link hover-text-red" href="javascript:showDetails('beta-testing', 'other-1', -66)"><i class="link-icon text-red fa fa-hashtag"></i>beta-testing</a> their apps &amp; games, as well as making them more accessible in our country by <a class="link hover-text-red" href="javascript:showDetails('translations', 'other-2', -66)"><i class="link-icon text-red fa fa-hashtag"></i>translating</a> them to Slovak language. Nowadays, we&apos;re in search for some free time to continue our work on App no. 1 and Game  no. 2.
         </p>
       </div>
 
@@ -341,7 +341,7 @@
 
         <div class="map w3-section w3-center">
           <div class="marker">
-            <a href="https://www.google.sk/maps/place/Ko%C5%A1ice/@48.6973299,21.0991096,11z/data=!3m1!4b1!4m5!3m4!1s0x473ee01b67c6957b:0x400f7d1c6978bd0!8m2!3d48.7163857!4d21.2610746" target="_blank" class="location"><span color="text-red">Košice</span><i class="fa fa-map-marker"></i></a>
+            <a href="https://www.google.sk/maps/place/Ko%C5%A1ice/@48.6973299,21.0991096,11z/data=!3m1!4b1!4m5!3m4!1s0x473ee01b67c6957b:0x400f7d1c6978bd0!8m2!3d48.7163857!4d21.2610746" target="_blank" class="location"><span color="text-red">Košice<br/></span><i class="fa fa-map-marker"></i></a>
           </div>
           <div class="social">
             <a href="javascript:sendMail('contact')" title="E-mail" class="mail w3-hover-text-light-grey">

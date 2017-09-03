@@ -111,7 +111,7 @@ a:focus {
 /* Buttons */
 .download {
   width: 180px;
-  padding: 32px 0;
+  margin: 32px 0;
 }
 
 /* Navbar */
@@ -185,9 +185,9 @@ a:focus {
 }
 .keyplayer a img {
   filter: grayscale(100%);
-  -moz-transition: all 0.3s ease-in;
+  /*-moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;*/
 }
 .keyplayer a.active img, .keyplayer a:hover img {
   filter: none;
@@ -215,9 +215,9 @@ a:focus {
   border-radius: 50px;
   background-color: #000000;
   border: 1px solid #757575;
-  -moz-transition: all 0.3s ease-in;
+  /*-moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;*/
 }
 .chip img {
   float: left;
@@ -389,9 +389,18 @@ a:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 10%;
   height: 100%;
-  background: linear-gradient(to left, black 0%, transparent 10%, transparent 90%, black 100%);
+  background: linear-gradient(to right, black, transparent);
+}
+.slick-list:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(to left, black, transparent);
 }
 .press .slick-slide {
   margin: 0 32px;
@@ -428,14 +437,15 @@ a:focus {
 .marker {
   color: #000000;
   position: absolute;
-  bottom: 165px;
+  bottom: 174px;
   left: 9px;
   right: 0;
+  font-size: 8px;
+}
+.marker i {
   font-size: 36px;
 }
 .marker span {
-  display: block;
-  margin-bottom: -14px;
   font-size: 12px;
   opacity: 0;
   transition: all .3s ease-in-out;
