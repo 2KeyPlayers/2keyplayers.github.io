@@ -200,8 +200,8 @@
                 <p class="value">40 (+10) challenging tables</p>
                 <p class="value">exceptional power-ups</p>
                 <p class="value">Game Center achievements &amp; leaderboards</p>
-                <p class="value">music by Pietro Royalty</p>
-                <p class="value">made in Slovakia</p>
+                <p class="value">music by <a class="link hover-text-red" href="https://twitter.com/pietroroyalty" target="_blank"><i class="link-icon text-red fa fa-twitter"></i>Pietro Royalty</a></p>
+                <p class="value">made in <a class="link hover-text-red" href="http://slovakia.travel/en" target="_blank"><i class="link-icon text-red fa fa-link"></i>Slovakia</a></p>
               </div>
               <div class="half-details right w3-col">
                 <p class="key w3-right-align w3-wide">Screenshots</p>
