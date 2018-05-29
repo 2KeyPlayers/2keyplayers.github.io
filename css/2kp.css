@@ -2,8 +2,6 @@
 
 /* Custom w3- classes */
 .w3-container,.w3-panel{padding:0 16px;}
-.w3-padding-top-32{padding-top:32px !important;}
-.w3-padding-bottom-64{padding-bottom:64px !important;}
 .w3-ligh-grey{background-color:#f9f9f9 !important;}
 .w3-hover-ligh-grey{background-color:#f9f9f9 !important;}
 .w3-text-ligh-grey{color:#f9f9f9 !important;}
@@ -13,7 +11,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 body {
   color: #f9f9f9;
-  background-color: #000000;
+  background-color: #111111;
+}
+
+img {
+  margin-bottom: -6px;
 }
 
 /* Colors */
@@ -42,7 +44,9 @@ body {
 .hover-text-orange:hover {color: #f99c24 !important; background-color: inherit !important;}
 .hover-text-blue:hover {color: #6ec9d4 !important; background-color: inherit !important;}
 .hover-text-slick:hover {color: #3a99d8 !important;}
-.hover-text-testing:hover {color: #379ae9 !important;}
+/*.hover-text-testing:hover {color: #379ae9 !important;}
+.hover-text-slovak:hover {color: #ff6464 !important;}*/
+.hover-text-testing:hover {color: #ff6464 !important;}
 .hover-text-slovak:hover {color: #ff6464 !important;}
 
 /* Slick */
@@ -61,6 +65,21 @@ body {
 }
 .slick-dots li button:before, .slick-dots li.slick-active button:before {
   color: #ffffff;
+}
+
+/* Tippy */
+.tippy {
+  cursor: pointer;
+}
+.tippy-tooltip {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.tippy-tooltip.kp-theme {
+  background-color: #757575;
+}
+.tippy-popper[x-placement^=top] .tippy-tooltip.kp-theme .tippy-arrow {
+  color: #757575;
 }
 
 /* Font */
@@ -117,12 +136,13 @@ a:focus {
 /* Navbar */
 #navbar {
   color: #757575;
-  background: #000000;
+  background: #111111;
   border-bottom: 1px solid #757575;
   margin-top: -51px;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  z-index: 9999;
 }
 #navbar.active {
   margin-top: 0;
@@ -131,6 +151,9 @@ a:focus {
   width: 33.33333% !important;
   padding: 10px 10px 4px 10px !important;
 }
+/*.navbar-item:hover {
+  background-color: #757575 !important;
+}*/
 
 /* Intro */
 #intro {
@@ -148,93 +171,114 @@ a:focus {
 }
 #intro .logo {
   height: 70vh;
-  background: #f9f9f9;
-  border-bottom: 1px solid #757575;
+  background: #111111;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #intro .motto {
   height: 30vh;
+  color: #111111;
+  background-color: #f9f9f9;
   padding: 0 32px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;;
   align-items: center;
+}
+#intro .motto .arrow i {
+  color: #111111;
 }
 #intro img {
   width: 40%;
   padding: 32px;
 }
 #intro h4 {
+  color: #111111;
   margin-top: 0;
 }
 
+/* Content */
+.content {
+  padding-top: 32px;
+}
+.content > .w3-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 10%;
+}
+.content > .w3-container:first-of-type {
+  padding-top: 0;
+}
+
+h2 {
+  padding-top: 7px;
+}
+
 /* 2 brothers */
+.keyplayers {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .keyplayer {
-  float: left;
-  width: 49.99999%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-.keyplayer.no1 {
-  padding-right: 32px;
-}
-.keyplayer.no2 {
-  padding-left: 32px;
-}
-.keyplayer .value {
+/*.keyplayer .value {
   padding: 2px 16px;
-}
+}*/
 .keyplayer a img {
-  filter: grayscale(100%);
+  height: 120px;
+  width: 120px;
   /*-moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;*/
+}
+.no-touch .keyplayer a img {
+  filter: grayscale(100%);
 }
 .keyplayer a.active img, .keyplayer a:hover img {
   filter: none;
 }
+
+.keyplayer .about {
+  display: flex;
+  width: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.keyplayer .about a {
+  background-color: #111111;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid #757575;
+}
+.keyplayer .about a:last-of-type {
+  border-bottom: none;
+}
+.keyplayer .about a i {
+  margin: auto;
+}
+
 .key {
   color: #757575;
   font-size: 12px;
   line-height: 16px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .value {
-  color: #000000;
-  background-color: #f9f9f9;
-  border-radius: 14px;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-.chip {
-  display: inline-block;
-  padding: 0 50px 0 64px;
-  height: 100px;
-  font-size: 22px;
-  line-height: 100px;
-  border-radius: 50px;
-  background-color: #000000;
-  border: 1px solid #757575;
-  /*-moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;*/
-}
-.chip img {
-  float: left;
-  margin: -14px 32px 0 -66px;
-  height: 128px;
-  width: 128px;
-  border-radius: 50%;
-}
-.chip > a {
-  color: #f9f9f9;
-}
-.chip > a.active {
-  color: #ff6464;
-}
-.chip > div {
-  font-size: 15px;
-  line-height: 24px;
+  text-align: right;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* Apps & Games */
@@ -278,13 +322,12 @@ a:focus {
 }
 .toggler.active:hover .image img {
   opacity: 1;
-
 }
 
-#game-1 {
+#tiliard {
   margin-top: 16px;
 }
-#game-1 .image {
+#tiliard .image {
   background-image: url("../img/tiliard/tiliard-bg.jpg");
   background-size: 100% 100%;
   background-position: center;
@@ -295,67 +338,31 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
-#game-1 .caption span {
-  color: #000000;
-}
-
-#other-1 {
-  margin-top: 20px;
-  padding-right: 10px;
-}
-#other-1 .image {
-  background-image: url("../img/others/beta-testing-bg.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat-x;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#other-1 .image img {
-  width: 100px;
-}
-
-#other-2 {
-  margin-top: 20px;
-  padding-left: 10px;
-}
-#other-2 .image {
-  background-image: url("../img/others/translations-bg.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat-x;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#other-2 .image img {
-  width: 80px;
+#tiliard .caption span {
+  color: #111111;
 }
 
 .other-list {
-  padding-top: 10px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .other-item {
-  width: 120px;
+  width: 90px;
   display: inline-block;
   text-align: center;
   vertical-align: top;
+}
+.other-item:nth-of-type(n+4) {
   margin-top: 20px;
 }
 .itunes-icon {
   display: block;
-  width: 85px;
-  border-radius: 18px;
-  margin: 0 auto 10px auto;
+  width: 60px;
+  border-radius: 13px;
+  margin: 0 auto;
 }
 
 .half-details {
@@ -381,9 +388,6 @@ a:focus {
   height: auto;
 }
 
-.press {
-  margin-bottom: 64px !important;
-}
 .press:after {
   content: "";
   position: absolute;
@@ -391,16 +395,16 @@ a:focus {
   left: 0;
   width: 10%;
   height: 100%;
-  background: linear-gradient(to right, black, transparent);
+  background: linear-gradient(to right, #111111, transparent);
 }
-.slick-list:after {
+.press .slick-list:after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 10%;
   height: 100%;
-  background: linear-gradient(to left, black, transparent);
+  background: linear-gradient(to left, #111111, transparent);
 }
 .press .slick-slide {
   margin: 0 32px;
@@ -420,7 +424,10 @@ a:focus {
 
 /* Players' lounge */
 .map {
+  display: flex;
+  justify-content: space-between;
   background-image: url("../img/map.jpg");
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -435,11 +442,10 @@ a:focus {
   filter: none;
 }
 .marker {
-  color: #000000;
-  position: absolute;
-  bottom: 174px;
-  left: 9px;
-  right: 0;
+  color: #111111;
+  width: 60px;
+  text-align: center;
+  padding-top: 70px;
   font-size: 8px;
 }
 .marker i {
@@ -458,49 +464,61 @@ a:focus {
 }
 
 .social {
-  position: absolute;
-  bottom: 16px;
-  left: 0;
-  right: 0;
+  display: flex;
+  width: 60px;
   overflow: hidden;
   white-space: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
 }
 .social a {
-  font-size: 18px;
-  margin: 0 16px;
+  background-color: #111111;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 1px;
 }
-.social a span {
-  color: #000000;
+.social a i {
+  margin: auto;
 }
-.social a span .fa-inverse {
-  color: #f9f9f9;
-}
-.location:hover span {
+
+.location:hover i {
   color: #ff6464 !important;
+}
+
+.mail {
+  padding-bottom: 10px;
 }
 .mail .fa-envelope {
   font-size: 18px;
 }
-.mail:hover span {
-  color: #ff6464 !important;
+.mail:hover {
+  background-color: #ff6464 !important;
 }
-.twitter:hover span {
-  color: #1da1f2 !important;
+.twitter:hover {
+  background-color: #1da1f2 !important;
 }
-.facebook:hover span {
-  color: #3b5998 !important;
+.facebook:hover {
+  background-color: #3b5998 !important;
 }
-.tumblr:hover span {
-  color: #3a475c !important;
+.tumblr:hover {
+  background-color: #3a475c !important;
 }
-.github:hover span {
-  color: #32aa4c !important;
+.github:hover {
+  background-color: #32aa4c !important;
 }
-.steam:hover span {
-  color: #1c2837 !important;
+.steam:hover {
+  background-color: #1c2837 !important;
 }
 
 /* Footer */
+.footer {
+  margin-top: 32px;
+  padding: 0 10%;
+}
 footer div {
   display: inline-block;
   padding-left: 16px;
@@ -511,35 +529,13 @@ footer .link-icon {
 }
 
 /* Responsivity */
-@media (max-width:800px) {
-  .keyplayer.no1 {
-    padding-right: 12px;
-  }
-  .keyplayer.no2 {
-    padding-left: 12px;
-  }
-  .chip {
-    padding: 0 40px 0 48px;
-    height: 80px;
-    font-size: 16px;
-    line-height: 80px;
-    border-radius: 40px;
-  }
-  .chip img {
-    float: left;
-    margin: -8px 24px 0 -50px;
-    height: 96px;
-    width: 96px;
-  }
-}
-
 @media (max-width:768px) {
-  .w3-padding-large {
+  .content > .w3-container, .footer {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
 
-  h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}
+  h1{font-size:30px}h2{font-size:24px}h3{font-size:20px}h4{font-size:16px}h5{font-size:16px}
 
   #intro .logo {
     height: 60vh;
@@ -548,7 +544,24 @@ footer .link-icon {
     height: 40vh;
   }
   #intro img {
-    width: 60%;
+    width: 70%;
+  }
+
+  .keyplayer a img {
+    height: 96px;
+    width: 96px;
+  }
+  .keyplayer .about {
+    width: 32px;
+  }
+  .keyplayer .about a {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .value {
+    text-align: center;
   }
 
   .tiliard {
@@ -563,42 +576,12 @@ footer .link-icon {
   .half-details.right {
     padding-left: 0;
   }
-
-  .social a {
-    margin: 0 8px;
-  }
-}
-
-@media (max-width:630px) {
-  .keyplayer {
-    width: 100%;
-  }
-  .keyplayer.no1 {
-    padding-right: 0px;
-  }
-  .keyplayer.no2 {
-    padding-left: 0px;
-    padding-top: 32px;
-  }
-
-  .chip {
-    padding: 0 35px 0 32px;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 35px;
-  }
-  .chip img {
-    float: left;
-    margin: -5px 20px 0 -34px;
-    height: 80px;
-    width: 80px;
-  }
 }
 
 @media (max-width:600px) {
-  .w3-padding-large {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+  .content > .w3-container, .footer {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   #intro .logo {
@@ -611,21 +594,23 @@ footer .link-icon {
     width: 100%;
   }
 
-  .tiliard {
-    background-image: url("../img/tiliard/tiliard-bg-600.jpg");
-  }
-  #other-1, #other-2 {
-    padding: 0;
-  }
-  #other-1 .other-list {
-    padding-bottom: 32px;
+  .keyplayer {
+    width: 100%;
   }
 
-  .social a {
-    margin: 0;
+  .tiliard {
+    background-image: url("../img/tiliard/tiliard-bg-600.jpg");
   }
 }
 
 @media (max-width:320px) {
-  h1{font-size:24px}h2{font-size:20px}h3{font-size:16px}h4{font-size:14px}h5{font-size:12px}
+  .tippy-tooltip {
+    width: 300px;
+    max-width: 300px;
+  }
+  .itunes-icon {
+    width: 50px;
+    border-radius: 11px;
+  }
+  h1{font-size:24px}h2{font-size:20px}h3{font-size:16px}h4{font-size:12px}h5{font-size:12px}
 }

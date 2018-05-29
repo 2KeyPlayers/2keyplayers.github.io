@@ -17,13 +17,6 @@ function jumpTo(id, offset) {
   scrollTo(id, offset, true);
 }
 
-function showTrophies() {
-  document.getElementById("sport-junkies").style.display = "block";
-}
-function hideTrophies() {
-  document.getElementById("sport-junkies").style.display = "none";
-}
-
 function showDetails(cls, id, offset) {
   var toggler = $("." + cls);
   if (!toggler.hasClass("active")) {
@@ -94,11 +87,11 @@ function adaptNavbar(id) {
 
   $(".navbar-item").removeClass("text-pink text-red text-green text-blue");
   if (id == undefined) {
-    if (scrollTop > positionP - 32) {
+    if (scrollTop >= positionP - 16) {
       $(".navbar-p").addClass("text-blue");
-    } else if (scrollTop > positionK) {
+    } else if (scrollTop >= positionK - 16) {
       $(".navbar-k").addClass("text-green");
-    } else if (scrollTop > position2 - 66) {
+    } else if (scrollTop >= position2 - 50) {
       $(".navbar-2").addClass("text-red");
     }
   } else {
