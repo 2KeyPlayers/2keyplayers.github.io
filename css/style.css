@@ -1,44 +1,55 @@
 :root {
-    --color: #f9f9f9;
+  --color: #f9f9f9;
+  --background-color: #000000;
 }
 
 body {
-    background-color: black;
+  background-color: var(--background-color);
+  padding: 1rem 0;
 }
 
-body>header {
-    padding-top: 3rem;
-    text-align: center;
+header {
+
+  padding: 2rem;
+  text-align: center;
 }
 
-body>main {
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
+header>svg {
+  width: "100%";
+  max-width: 550px;
+}
+
+main {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
 
 main>h2 {
-    padding-top: 10rem;
-    font-family: 'Brush Script MT', cursive;
-    color: var(--color);
+  padding-top: 10rem;
+  font-family: 'Brush Script MT', cursive;
+  color: var(--color);
 }
 
 td {
-    border-bottom: none;
-    text-align: center;
-}
-
-body>footer {
-    padding-bottom: 1rem;
-    text-align: center;
+  border-bottom: none;
+  text-align: center;
 }
 
 footer {
-    padding-top: 10rem;
-    color: var(--color);
+  padding: 2rem;
+  text-align: center;
+  color: var(--color);
 }
 
-footer>a {
-    color: var(--color);
+footer>div {
+  width: 100%;
+  padding: 0 0.5rem;
+  color: var(--background-color);
+  background-color: var(--color);
+}
+
+footer>div>a {
+  color: var(--background-color);
 }
